@@ -1,0 +1,18 @@
+seal-instrument: instrumenting module 'pcre2_merged'
+seal-instrument: 39 sealable types, 5781 seal points
+seal-instrument: created __sealcap global and __seal_init() with otype 1026 (base=1024 + offset=2)
+seal-instrument D2: in pcre2_code_copy_with_tables_8 indirect call arg 0 type=struct.pcre2_real_code_8
+seal-instrument D2: in pcre2_code_free_8 indirect call arg 0 type=struct.pcre2_real_code_8
+seal-instrument D2: in pcre2_compile_context_free_8 indirect call arg 0 type=struct.pcre2_real_compile_context_8
+seal-instrument D2: in pcre2_match_context_free_8 indirect call arg 0 type=struct.pcre2_real_match_context_8
+seal-instrument D2: in pcre2_converted_pattern_free_8 indirect call arg 0 type=struct.pcre2_memctl
+seal-instrument D2: in pcre2_match_data_free_8 indirect call arg 0 type=struct.pcre2_real_match_data_8
+seal-instrument D2: in pcre2_serialize_decode_8 indirect call arg 0 type=struct.pcre2_real_code_8
+seal-instrument D2: in pcre2_serialize_free_8 indirect call arg 0 type=struct.pcre2_memctl
+seal-instrument D2: in pcre2_substring_free_8 indirect call arg 0 type=struct.pcre2_memctl
+seal-instrument D2: in pcre2_substring_list_free_8 indirect call arg 0 type=struct.pcre2_memctl
+seal-instrument: 10 indirect call arg seals (Strategy D2) across 10 call sites
+seal-instrument: 9 functions identified for seal-on-return
+seal-instrument: 7 indirect call unseals (Strategy 5b)
+seal-instrument: registered __seal_init() as .init_array constructor (priority 101)
+seal-instrument: 19 seal insertions (9 seal-on-return, 0 seal-before-call, 10 indirect-call-D2), 83 unseal insertions (74 on-entry, 2 strategy-5, 7 strategy-5b, 0 after-call), 0 accessor replacements

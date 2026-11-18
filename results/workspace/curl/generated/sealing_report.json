@@ -1,0 +1,1587 @@
+{
+  "program": "curl",
+  "libraries": [
+    "curl_merged",
+    "openssl_merged",
+    "zlib_merged"
+  ],
+  "shared_types": [
+    {
+      "type": "struct.Cookie",
+      "owner": "curl_merged",
+      "total_fields": 16,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.Curl_cfilter",
+      "owner": "curl_merged",
+      "total_fields": 6,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.DES_ks",
+      "owner": "openssl_merged",
+      "total_fields": 1,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.GENERAL_NAME_st",
+      "owner": "openssl_merged",
+      "total_fields": 2,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "type",
+            "d"
+          ],
+          "field_indices": [
+            0,
+            1
+          ],
+          "access_functions": [
+            "ossl_verifyhost"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "cannot_seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.MD5state_st",
+      "owner": "openssl_merged",
+      "total_fields": 8,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.PKCS12_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "PKCS12_init_ex"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_algor_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "Curl_ossl_certchain"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "PKCS12_pbe_crypt_ex",
+            "ossl_ecx_key_op",
+            "X509_ALGOR_get0",
+            "ossl_x509_algor_get_md",
+            "ossl_x509_algor_md_to_mgf1",
+            "X509_ALGOR_set0",
+            "ossl_x509_algor_mgf1_decode",
+            "PKCS5_pbe2_set_iv_ex",
+            "PKCS5_pbkdf2_set_ex",
+            "epki2pki_decode",
+            "rsa_d2i_PKCS8",
+            "ossl_rsa_key_from_pkcs8",
+            "sm2_d2i_PKCS8",
+            "ecx_d2i_PKCS8",
+            "ec_d2i_PKCS8",
+            "dsa_d2i_PKCS8",
+            "dh_d2i_PKCS8",
+            "ossl_dh_key_from_pkcs8",
+            "rsa_sig_print",
+            "rsa_item_verify",
+            "rsa_sig_info_set",
+            "ossl_rsa_pss_to_ctx",
+            "rsa_pss_param_print",
+            "ASN1_item_verify_ctx",
+            "PKCS7_dataInit",
+            "pkcs7_bio_add_digest",
+            "ossl_cms_ecdsa_dsa_sign",
+            "ossl_cms_rsa_sign",
+            "ossl_cms_EncryptedContent_init_bio",
+            "ossl_cms_RecipientInfo_pwri_crypt",
+            "ossl_cms_dh_envelope",
+            "ossl_cms_ecdh_envelope",
+            "ossl_cms_rsa_envelope",
+            "ossl_x509_init_sig_info",
+            "X509_ALGOR_cmp",
+            "ASN1_sign",
+            "ASN1_verify",
+            "PKCS5_pbe2_set_scrypt",
+            "X509_ALGOR_copy",
+            "X509_signature_print",
+            "CMS_RecipientInfo_decrypt",
+            "CMS_add0_recipient_password",
+            "ESS_CERT_ID_V2_new_init",
+            "OCSP_cert_id_new",
+            "PKCS12_newpass",
+            "PKCS7_simple_smimecap",
+            "PKCS7_dataDecode",
+            "PKCS7_add_signer",
+            "PKCS7_SIGNER_INFO_set",
+            "TS_X509_ALGOR_print_bio",
+            "TS_MSG_IMPRINT_print_bio",
+            "TS_RESP_create_response",
+            "int_ts_RESP_verify_token",
+            "ts_check_imprints"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_crl_st",
+      "owner": "openssl_merged",
+      "total_fields": 18,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_extension_st",
+      "owner": "openssl_merged",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_info_st",
+      "owner": "openssl_merged",
+      "total_fields": 6,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "x509",
+            "crl"
+          ],
+          "field_indices": [
+            0,
+            1
+          ],
+          "access_functions": [
+            "Curl_ssl_setup_x509_store"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_name_entry_st",
+      "owner": "openssl_merged",
+      "total_fields": 4,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_name_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_pubkey_st",
+      "owner": "openssl_merged",
+      "total_fields": 6,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.__sFILE",
+      "owner": "system",
+      "total_fields": 26,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "_p",
+            "_r",
+            "_flags",
+            "_file"
+          ],
+          "field_indices": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "access_functions": [
+            "tool_mime_stdin_read",
+            "get_param_part",
+            "tool_mime_new_filedata",
+            "post_per_transfer",
+            "single_transfer",
+            "file2memory",
+            "Curl_get_line",
+            "Curl_fopen",
+            "read_part_content",
+            "addbyter",
+            "alloc_addbyter",
+            "storebuffer",
+            "telnet_do"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "_flags",
+            "_file"
+          ],
+          "field_indices": [
+            3,
+            4
+          ],
+          "access_functions": [
+            "open_console",
+            "read_string_inner",
+            "file_read",
+            "file_ctrl",
+            "RAND_load_file"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.addrinfo",
+      "owner": "system",
+      "total_fields": 8,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "ai_family",
+            "ai_socktype",
+            "ai_addrlen",
+            "ai_canonname",
+            "ai_addr",
+            "ai_next"
+          ],
+          "field_indices": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "access_functions": [
+            "Curl_freeaddrinfo",
+            "Curl_getaddrinfo_ex",
+            "Curl_he2ai",
+            "Curl_unix2addr",
+            "cf_he_connect",
+            "baller_start",
+            "Curl_socket_open",
+            "Curl_cf_tcp_create",
+            "cf_socket_open",
+            "Curl_cf_udp_create",
+            "Curl_cf_unix_create",
+            "Curl_printable_address",
+            "fetch_addr",
+            "Curl_cache_addr",
+            "get_localhost",
+            "Curl_loadhostpairs",
+            "Curl_doh_is_resolved",
+            "socks_proxy_cf_connect",
+            "ftp_state_use_port"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "ai_family",
+            "ai_socktype",
+            "ai_protocol",
+            "ai_addr",
+            "ai_next"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "access_functions": [
+            "BIO_ADDRINFO_free",
+            "BIO_ADDRINFO_family",
+            "BIO_ADDRINFO_socktype",
+            "BIO_ADDRINFO_protocol",
+            "BIO_ADDRINFO_next",
+            "BIO_ADDRINFO_address",
+            "BIO_lookup_ex"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.asn1_object_st",
+      "owner": "openssl_merged",
+      "total_fields": 6,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.asn1_string_st",
+      "owner": "openssl_merged",
+      "total_fields": 4,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "length",
+            "type",
+            "data"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2
+          ],
+          "access_functions": [
+            "Curl_ossl_certchain"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.bignum_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.bio_method_st",
+      "owner": "openssl_merged",
+      "total_fields": 12,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.bio_st",
+      "owner": "openssl_merged",
+      "total_fields": 18,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.crypto_ex_data_st",
+      "owner": "openssl_merged",
+      "total_fields": 2,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.curl_blob",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "Curl_setblobopt",
+            "blobcmp",
+            "Curl_clone_primary_ssl_config",
+            "Curl_ssl_setup_x509_store",
+            "cert_stuff"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.engine_st",
+      "owner": "openssl_merged",
+      "total_fields": 28,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_md_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 9,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_md_st",
+      "owner": "openssl_merged",
+      "total_fields": 32,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_pkey_st",
+      "owner": "openssl_merged",
+      "total_fields": 19,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.hostent",
+      "owner": "system",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "h_name",
+            "h_aliases",
+            "h_addrtype",
+            "h_addr_list"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "access_functions": [
+            "Curl_he2ai",
+            "Curl_ip2addr",
+            "Curl_str2addr"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ocsp_basic_response_st",
+      "owner": "openssl_merged",
+      "total_fields": 4,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ocsp_cert_id_st",
+      "owner": "openssl_merged",
+      "total_fields": 4,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ocsp_response_data_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ocsp_response_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "OCSP_response_status",
+            "OCSP_RESPONSE_print",
+            "OCSP_response_create"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.ossl_init_settings_st",
+      "owner": "openssl_merged",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.pthread",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.rsa_st",
+      "owner": "openssl_merged",
+      "total_fields": 26,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.sha256_ctx",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "my_sha256_init",
+            "my_sha256_update",
+            "my_sha256_final"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr",
+      "owner": "system",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "sa_family"
+          ],
+          "field_indices": [
+            1
+          ],
+          "access_functions": [
+            "Curl_addr2string",
+            "cf_socket_open",
+            "Curl_if2ip",
+            "ftp_state_use_port"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sa_family"
+          ],
+          "field_indices": [
+            1
+          ],
+          "access_functions": [
+            "addr_strings",
+            "BIO_ADDR_family",
+            "BIO_ADDR_sockaddr_size",
+            "BIO_lookup_ex",
+            "dgram_ctrl",
+            "BIO_ADDR_make",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_new",
+            "BIO_ADDR_rawport",
+            "BIO_ADDR_path_string"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr_in",
+      "owner": "system",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "sin_family",
+            "sin_port",
+            "sin_addr"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3
+          ],
+          "access_functions": [
+            "Curl_addr2string",
+            "cf_socket_open",
+            "Curl_printable_address",
+            "Curl_if2ip",
+            "socks_proxy_cf_connect",
+            "ftp_state_use_port"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sin_family",
+            "sin_port",
+            "sin_addr"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3
+          ],
+          "access_functions": [
+            "addr_strings",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_rawmake",
+            "BIO_ADDR_rawport"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr_un",
+      "owner": "system",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "sun_path"
+          ],
+          "field_indices": [
+            2
+          ],
+          "access_functions": [
+            "Curl_addr2string"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sun_family",
+            "sun_path"
+          ],
+          "field_indices": [
+            1,
+            2
+          ],
+          "access_functions": [
+            "BIO_lookup_ex",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_rawmake",
+            "BIO_ADDR_path_string"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_cipher_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "ssl_get_cipher_by_char",
+            "bytes_to_cipher_list",
+            "ssl_create_cipher_list"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_cipher_st.65",
+      "owner": "openssl_merged",
+      "total_fields": 16,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 98,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_method_st",
+      "owner": "openssl_merged",
+      "total_fields": 29,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_primary_config",
+      "owner": "curl_merged",
+      "total_fields": 18,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_session_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "ssl_cipher_get_evp",
+            "tls_construct_ctos_early_data",
+            "SSL_SESSION_set_protocol_version",
+            "d2i_SSL_SESSION",
+            "i2d_SSL_SESSION",
+            "tls_construct_client_hello",
+            "ssl_get_new_session",
+            "ssl_get_prev_session",
+            "ssl_session_cmp",
+            "SSL_SESSION_get_protocol_version",
+            "SSL_SESSION_print"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_session_st.81",
+      "owner": "openssl_merged",
+      "total_fields": 33,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_st",
+      "owner": "openssl_merged",
+      "total_fields": 130,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st_GENERAL_NAME",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st_X509",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st_X509_EXTENSION",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st_X509_INFO",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.termios",
+      "owner": "system",
+      "total_fields": 7,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.timeval",
+      "owner": "system",
+      "total_fields": 2,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "tv_sec",
+            "tv_usec"
+          ],
+          "field_indices": [
+            0,
+            1
+          ],
+          "access_functions": [
+            "tool_read_cb",
+            "setfiletime",
+            "progress_meter",
+            "tvnow",
+            "Curl_hsts_save",
+            "Curl_now"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "cannot_seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "tv_sec",
+            "tv_usec"
+          ],
+          "field_indices": [
+            0,
+            1
+          ],
+          "access_functions": [
+            "dtls1_ctrl",
+            "dtls1_handle_timeout",
+            "dtls1_is_timer_expired",
+            "ossl_pool_add_nonce_data",
+            "gcm_ghash_4bit",
+            "gcm_gmult_4bit",
+            "BIO_socket_wait",
+            "dgram_read",
+            "def_time_cb"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "cannot_seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.tm",
+      "owner": "system",
+      "total_fields": 11,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "tm_sec",
+            "tm_min",
+            "tm_hour",
+            "tm_mday",
+            "tm_mon",
+            "tm_year",
+            "tm_wday"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "access_functions": [
+            "tool_debug_cb",
+            "Curl_altsvc_save",
+            "Curl_hsts_save",
+            "Curl_add_timecondition",
+            "ftp_state_mdtm_resp",
+            "file_do"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "tm_sec",
+            "tm_min",
+            "tm_hour",
+            "tm_mday",
+            "tm_mon",
+            "tm_year",
+            "tm_wday",
+            "tm_yday"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "access_functions": [
+            "ossl_asn1_time_print_ex",
+            "ossl_asn1_time_to_tm",
+            "OPENSSL_gmtime_adj",
+            "ossl_asn1_time_from_tm",
+            "ASN1_TIME_to_generalizedtime",
+            "ASN1_TIME_set_string_X509",
+            "OPENSSL_gmtime_diff",
+            "TS_RESP_create_response"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.ui_method_st",
+      "owner": "openssl_merged",
+      "total_fields": 10,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ui_st",
+      "owner": "openssl_merged",
+      "total_fields": 6,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ui_string_st",
+      "owner": "openssl_merged",
+      "total_fields": 7,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_cinf_st",
+      "owner": "openssl_merged",
+      "total_fields": 11,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_lookup_method_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "X509_LOOKUP_meth_new",
+            "X509_LOOKUP_meth_free"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_lookup_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_st",
+      "owner": "openssl_merged",
+      "total_fields": 27,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_store_st",
+      "owner": "openssl_merged",
+      "total_fields": 19,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.z_stream_s",
+      "owner": "zlib_merged",
+      "total_fields": 14,
+      "shared_with": [
+        {
+          "library": "curl_merged",
+          "fields_accessed": [
+            "next_in"
+          ],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "gzip_unencode_write",
+            "gzip_close_writer",
+            "inflate_stream",
+            "process_trailer",
+            "deflate_unencode_write",
+            "deflate_close_writer"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    }
+  ],
+  "embedded_foreign_fields": [
+    {
+      "container_type": "struct.zlib_writer",
+      "consumer": "curl_merged",
+      "field_type": "struct.z_stream_s",
+      "field_owner": "zlib_merged",
+      "field_index": 3,
+      "function": "gzip_init_writer"
+    },
+    {
+      "container_type": "struct.ssl_st",
+      "consumer": "openssl_merged",
+      "field_type": "struct.anon",
+      "field_owner": "curl_merged",
+      "field_index": 17,
+      "function": "ssl3_free"
+    },
+    {
+      "container_type": "struct.ssl_ctx_st",
+      "consumer": "openssl_merged",
+      "field_type": "struct.anon.1",
+      "field_owner": "curl_merged",
+      "field_index": 60,
+      "function": "ssl3_ctx_callback_ctrl"
+    },
+    {
+      "container_type": "struct.ssl_st",
+      "consumer": "openssl_merged",
+      "field_type": "struct.anon.2",
+      "field_owner": "curl_merged",
+      "field_index": 88,
+      "function": "tls_setup_handshake"
+    },
+    {
+      "container_type": "struct.prov_cast_ctx_st",
+      "consumer": "openssl_merged",
+      "field_type": "union.__mbstate_t",
+      "field_owner": "curl_merged",
+      "field_index": 1,
+      "function": "cipher_hw_sm4_initkey"
+    },
+    {
+      "container_type": "struct.SHA512state_st",
+      "consumer": "openssl_merged",
+      "field_type": "struct.fd_set",
+      "field_owner": "curl_merged",
+      "field_index": 3,
+      "function": "SHA512_Update"
+    }
+  ],
+  "sealing_summary": {
+    "total_shared_types": 54,
+    "sealable_opaque": 42,
+    "needs_accessor": 11,
+    "cannot_seal": 1,
+    "address_taken": 0
+  }
+}

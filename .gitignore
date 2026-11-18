@@ -1,0 +1,33 @@
+# Local Claude session context — notes for working on the repo, not artifact
+# documentation. Intentionally not part of the artifact.
+CLAUDE.md
+
+# Pipeline outputs (regenerable; see pipeline/build/run_seal_analysis.sh)
+workspace/
+gen/
+build_morello/
+# Scoped to the pass build tree on purpose. A bare "build/" also matches
+# pipeline/build/, which is source, not output — every script added there would
+# be silently untracked.
+analysis/llvm-passes/build/
+microbenchmarks/build/
+
+# Rocq build products (proofs/; removed by `make clean`)
+*.vo
+*.vok
+*.vos
+*.glob
+.*.aux
+.lia.cache
+.rocq-version
+Artifact_Check.log
+
+# Python / editor / OS noise
+__pycache__/
+*.pyc
+.DS_Store
+
+# Site-specific CAs for building the AE image behind an intercepting proxy.
+# See docker/certs/README.md — the directory ships empty on purpose.
+docker/certs/*
+!docker/certs/README.md

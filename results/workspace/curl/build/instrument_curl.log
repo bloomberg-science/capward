@@ -1,0 +1,67 @@
+seal-instrument: instrumenting module 'curl_merged'
+seal-instrument: 40 sealable types, 6269 seal points
+seal-instrument: created __sealcap global and __seal_init() with otype 1024 (base=1024 + offset=0)
+seal-instrument: embedded-foreign-field: exported 0 accessor(s), sealed 7 derivation site(s)
+seal-instrument D2: in Curl_conn_cf_discard_chain indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_discard_all indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_close indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_discard_sub indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_connect indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_close indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_get_select_socks indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_send indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_recv indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_connect indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_connect indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_connect indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in conn_report_connect_stats indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in conn_report_connect_stats indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_update_info indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_update_info indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_get_select_socks indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_get_host indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_cntrl indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_cf_get_socket indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_get_socket indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_attach indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_attach indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_detach indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_detach indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_setup indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_setup indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_idle indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_idle indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_done_send indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_done_send indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_done indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_done indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_pause indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_ev_data_pause indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_conn_is_alive indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in cf_get_max_baller_time indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in cf_get_max_baller_time indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in http_proxy_cf_connect indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_clone_primary_ssl_config indirect call arg 0 type=struct.ssl_primary_config
+seal-instrument D2: in multissl_connect indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in multissl_connect_nonblocking indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in multissl_get_select_socks indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in multissl_close indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in multissl_recv_plain indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in multissl_send_plain indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_destroy indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_connect indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_connect indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_close indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_get_select_socks indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_data_pending indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_send indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_recv indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_cntrl indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in ssl_cf_cntrl indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in cf_ssl_is_alive indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument D2: in Curl_ssl_cfilter_remove indirect call arg 0 type=struct.Curl_cfilter
+seal-instrument: 58 indirect call arg seals (Strategy D2) across 58 call sites
+seal-instrument: 4 functions identified for seal-on-return
+seal-instrument: 5 indirect call unseals (Strategy 5b)
+seal-instrument: registered __seal_init() as .init_array constructor (priority 101)
+seal-instrument: 67 seal insertions (4 seal-on-return, 5 seal-before-call, 58 indirect-call-D2), 143 unseal insertions (120 on-entry, 14 strategy-5, 5 strategy-5b, 4 after-call), 44 accessor replacements

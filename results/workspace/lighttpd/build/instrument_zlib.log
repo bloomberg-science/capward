@@ -1,0 +1,3 @@
+seal-instrument: instrumenting module 'zlib_merged'
+seal-instrument: 30 sealable types, 6952 seal points
+seal-instrument: module 'zlib_merged' has no owned types, no call sites, and no accessor points, skipping

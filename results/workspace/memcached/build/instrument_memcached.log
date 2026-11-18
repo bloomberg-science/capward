@@ -1,0 +1,15 @@
+seal-instrument: instrumenting module 'memcached_merged'
+seal-instrument: 14 sealable types, 2197 seal points
+seal-instrument: created __sealcap global and __seal_init() with otype 1024 (base=1024 + offset=0)
+seal-instrument D2: in drive_machine indirect call arg 0 type=struct.conn
+seal-instrument D2: in drive_machine indirect call arg 0 type=struct.conn
+seal-instrument D2: in drive_machine indirect call arg 0 type=struct.conn
+seal-instrument D2: in drive_machine indirect call arg 0 type=struct.conn
+seal-instrument D2: in drive_machine indirect call arg 0 type=struct.conn
+seal-instrument D2: in drive_machine indirect call arg 0 type=struct.conn
+seal-instrument D2: in try_read_command_negotiate indirect call arg 0 type=struct.conn
+seal-instrument D2: in append_stat indirect call arg 4 type=struct.conn
+seal-instrument: 8 indirect call arg seals (Strategy D2) across 8 call sites
+seal-instrument: 1 functions identified for seal-on-return
+seal-instrument: registered __seal_init() as .init_array constructor (priority 101)
+seal-instrument: 19 seal insertions (1 seal-on-return, 10 seal-before-call, 8 indirect-call-D2), 38 unseal insertions (35 on-entry, 3 strategy-5, 0 strategy-5b, 0 after-call), 0 accessor replacements

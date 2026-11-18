@@ -1,0 +1,574 @@
+{
+  "program": "redis",
+  "libraries": [
+    "openssl_merged",
+    "redis_merged"
+  ],
+  "shared_types": [
+    {
+      "type": "struct.ACLLogEntry",
+      "owner": "redis_merged",
+      "total_fields": 7,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.__sFILE",
+      "owner": "system",
+      "total_fields": 26,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "_flags",
+            "_file"
+          ],
+          "field_indices": [
+            3,
+            4
+          ],
+          "access_functions": [
+            "open_console",
+            "read_string_inner",
+            "file_read",
+            "file_ctrl",
+            "RAND_load_file"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "redis_merged",
+          "fields_accessed": [
+            "_r",
+            "_flags",
+            "_file"
+          ],
+          "field_indices": [
+            1,
+            3,
+            4
+          ],
+          "access_functions": [
+            "redisAsciiArt",
+            "rdbSave",
+            "rdbLoad",
+            "rewriteConfigReadOldFile",
+            "aofLoadManifestFromFile",
+            "rewriteAppendOnlyFile",
+            "loadSingleAppendOnlyFile",
+            "clusterLoadConfig",
+            "rioFileWrite",
+            "redis_check_rdb",
+            "processAnnotations",
+            "checkSingleAof",
+            "fileIsRDB",
+            "fileIsManifest",
+            "luaL_loadfile",
+            "getF"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.addrinfo",
+      "owner": "system",
+      "total_fields": 8,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "ai_family",
+            "ai_socktype",
+            "ai_protocol",
+            "ai_addr",
+            "ai_next"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "access_functions": [
+            "BIO_ADDRINFO_free",
+            "BIO_ADDRINFO_family",
+            "BIO_ADDRINFO_socktype",
+            "BIO_ADDRINFO_protocol",
+            "BIO_ADDRINFO_next",
+            "BIO_ADDRINFO_address",
+            "BIO_lookup_ex"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "redis_merged",
+          "fields_accessed": [
+            "ai_family",
+            "ai_socktype",
+            "ai_protocol",
+            "ai_addrlen",
+            "ai_addr",
+            "ai_next"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "access_functions": [
+            "anetResolve",
+            "anetTcpGenericConnect",
+            "_anetTcpServer",
+            "_redisContextConnectTcp"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.bio_method_st",
+      "owner": "openssl_merged",
+      "total_fields": 12,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.bio_st",
+      "owner": "openssl_merged",
+      "total_fields": 18,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_pkey_st",
+      "owner": "openssl_merged",
+      "total_fields": 19,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.iovec",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "connTLSWritev"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.ossl_decoder_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 8,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ossl_init_settings_st",
+      "owner": "openssl_merged",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ossl_lib_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 10,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.pthread",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr",
+      "owner": "system",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sa_family"
+          ],
+          "field_indices": [
+            1
+          ],
+          "access_functions": [
+            "addr_strings",
+            "BIO_ADDR_family",
+            "BIO_ADDR_sockaddr_size",
+            "BIO_lookup_ex",
+            "dgram_ctrl",
+            "BIO_ADDR_make",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_new",
+            "BIO_ADDR_rawport",
+            "BIO_ADDR_path_string"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr_un",
+      "owner": "system",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sun_family",
+            "sun_path"
+          ],
+          "field_indices": [
+            1,
+            2
+          ],
+          "access_functions": [
+            "BIO_lookup_ex",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_rawmake",
+            "BIO_ADDR_path_string"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        },
+        {
+          "library": "redis_merged",
+          "fields_accessed": [
+            "sun_family",
+            "sun_path"
+          ],
+          "field_indices": [
+            1,
+            2
+          ],
+          "access_functions": [
+            "anetUnixServer",
+            "redisContextConnectUnix"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 98,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_method_st",
+      "owner": "openssl_merged",
+      "total_fields": 29,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_st",
+      "owner": "openssl_merged",
+      "total_fields": 130,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.timeval",
+      "owner": "system",
+      "total_fields": 2,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "tv_sec",
+            "tv_usec"
+          ],
+          "field_indices": [
+            0,
+            1
+          ],
+          "access_functions": [
+            "dtls1_ctrl",
+            "dtls1_handle_timeout",
+            "dtls1_is_timer_expired",
+            "ossl_pool_add_nonce_data",
+            "gcm_ghash_4bit",
+            "gcm_gmult_4bit",
+            "BIO_socket_wait",
+            "dgram_read",
+            "def_time_cb"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "cannot_seal"
+        },
+        {
+          "library": "redis_merged",
+          "fields_accessed": [
+            "tv_sec"
+          ],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "aeProcessEvents",
+            "_redisContextConnectTcp",
+            "redisContextConnectUnix"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.tm",
+      "owner": "system",
+      "total_fields": 11,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "tm_sec",
+            "tm_min",
+            "tm_hour",
+            "tm_mday",
+            "tm_mon",
+            "tm_year",
+            "tm_wday",
+            "tm_yday"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "access_functions": [
+            "ossl_asn1_time_print_ex",
+            "ossl_asn1_time_to_tm",
+            "OPENSSL_gmtime_adj",
+            "ossl_asn1_time_from_tm",
+            "ASN1_TIME_to_generalizedtime",
+            "ASN1_TIME_set_string_X509",
+            "OPENSSL_gmtime_diff",
+            "TS_RESP_create_response"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "redis_merged",
+          "fields_accessed": [
+            "tm_sec",
+            "tm_min",
+            "tm_hour",
+            "tm_mday",
+            "tm_mon",
+            "tm_year",
+            "tm_wday",
+            "tm_yday",
+            "tm_isdst"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "access_functions": [
+            "updateCachedTime",
+            "serverCron",
+            "initServerConfig",
+            "nolocks_localtime"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_st",
+      "owner": "openssl_merged",
+      "total_fields": 27,
+      "shared_with": [
+        {
+          "library": "redis_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    }
+  ],
+  "embedded_foreign_fields": [
+    {
+      "container_type": "struct.ssl_st",
+      "consumer": "openssl_merged",
+      "field_type": "struct.anon.2",
+      "field_owner": "redis_merged",
+      "field_index": 88,
+      "function": "tls_setup_handshake"
+    },
+    {
+      "container_type": "struct.prov_cast_ctx_st",
+      "consumer": "openssl_merged",
+      "field_type": "union.__mbstate_t",
+      "field_owner": "redis_merged",
+      "field_index": 1,
+      "function": "cipher_hw_sm4_initkey"
+    }
+  ],
+  "sealing_summary": {
+    "total_shared_types": 13,
+    "sealable_opaque": 12,
+    "needs_accessor": 1,
+    "cannot_seal": 0,
+    "address_taken": 0
+  }
+}

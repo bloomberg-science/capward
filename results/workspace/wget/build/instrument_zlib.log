@@ -1,0 +1,34 @@
+seal-instrument: instrumenting module 'zlib_merged'
+seal-instrument: 24 sealable types, 3174 seal points
+seal-instrument: created __sealcap global and __seal_init() with otype 1026 (base=1024 + offset=2)
+seal-instrument: 3 functions identified for seal-on-return
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_next_in
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_next_in
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_avail_in
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_avail_in
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_total_in
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_total_in
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_next_out
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_next_out
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_avail_out
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_avail_out
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_total_out
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_total_out
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_msg
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_msg
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_state
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_state
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_zalloc
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_zalloc
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_zfree
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_zfree
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_opaque
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_opaque
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_data_type
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_data_type
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_adler
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_adler
+seal-instrument: generated getter cheri_accessor_z_stream_s_get_reserved
+seal-instrument: generated setter cheri_accessor_z_stream_s_set_reserved
+seal-instrument: registered __seal_init() as .init_array constructor (priority 101)
+seal-instrument: 3 seal insertions (3 seal-on-return, 0 seal-before-call, 0 indirect-call-D2), 86 unseal insertions (86 on-entry, 0 strategy-5, 0 strategy-5b, 0 after-call), 14 accessor replacements

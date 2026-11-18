@@ -1,0 +1,6 @@
+seal-instrument: instrumenting module 'redis_merged'
+seal-instrument: 11 sealable types, 3035 seal points
+seal-instrument: created __sealcap global and __seal_init() with otype 1024 (base=1024 + offset=0)
+seal-instrument: 0 functions identified for seal-on-return
+seal-instrument: registered __seal_init() as .init_array constructor (priority 101)
+seal-instrument: 0 seal insertions (0 seal-on-return, 0 seal-before-call, 0 indirect-call-D2), 1 unseal insertions (1 on-entry, 0 strategy-5, 0 strategy-5b, 0 after-call), 0 accessor replacements

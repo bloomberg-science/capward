@@ -1,0 +1,4801 @@
+
+{
+  "module": "/home/user/capward/workspace/nginx/bitcode/pcre2_merged.bc",
+  "struct_catalog": [
+    {
+      "name": "struct.pso",
+      "total_size": 32,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "type": "i16",
+          "offset": 16,
+          "size": 2,
+          "name": "length"
+        },
+        {
+          "index": 2,
+          "type": "i16",
+          "offset": 18,
+          "size": 2,
+          "name": "type"
+        },
+        {
+          "index": 3,
+          "type": "i32",
+          "offset": 20,
+          "size": 4,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "name": "struct.alasitem",
+      "total_size": 8,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i32",
+          "offset": 0,
+          "size": 4,
+          "name": "len"
+        },
+        {
+          "index": 1,
+          "type": "i32",
+          "offset": 4,
+          "size": 4,
+          "name": "meta"
+        }
+      ]
+    },
+    {
+      "name": "struct.verbitem",
+      "total_size": 12,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i32",
+          "offset": 0,
+          "size": 4,
+          "name": "len"
+        },
+        {
+          "index": 1,
+          "type": "i32",
+          "offset": 4,
+          "size": 4,
+          "name": "meta"
+        },
+        {
+          "index": 2,
+          "type": "i32",
+          "offset": 8,
+          "size": 4,
+          "name": "has_arg"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_real_convert_context_8",
+      "total_size": 64,
+      "fields": [
+        {
+          "index": 0,
+          "type": "%struct.pcre2_memctl = type { ptr addrspace(200), ptr addrspace(200), ptr addrspace(200) }",
+          "offset": 0,
+          "size": 48,
+          "name": "memctl"
+        },
+        {
+          "index": 1,
+          "type": "i32",
+          "offset": 48,
+          "size": 4,
+          "name": "glob_separator"
+        },
+        {
+          "index": 2,
+          "type": "i32",
+          "offset": 52,
+          "size": 4,
+          "name": "glob_escape"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_memctl",
+      "total_size": 48,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "malloc"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 16,
+          "size": 16,
+          "name": "free"
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 32,
+          "size": 16,
+          "name": "memory_data"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_real_match_context_8",
+      "total_size": 144,
+      "fields": [
+        {
+          "index": 0,
+          "type": "%struct.pcre2_memctl = type { ptr addrspace(200), ptr addrspace(200), ptr addrspace(200) }",
+          "offset": 0,
+          "size": 48,
+          "name": "memctl"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16,
+          "name": "callout"
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 64,
+          "size": 16,
+          "name": "callout_data"
+        },
+        {
+          "index": 3,
+          "type": "ptr addrspace(200)",
+          "offset": 80,
+          "size": 16,
+          "name": "substitute_callout"
+        },
+        {
+          "index": 4,
+          "type": "ptr addrspace(200)",
+          "offset": 96,
+          "size": 16,
+          "name": "substitute_callout_data"
+        },
+        {
+          "index": 5,
+          "type": "i64",
+          "offset": 112,
+          "size": 8,
+          "name": "offset_limit"
+        },
+        {
+          "index": 6,
+          "type": "i32",
+          "offset": 120,
+          "size": 4,
+          "name": "heap_limit"
+        },
+        {
+          "index": 7,
+          "type": "i32",
+          "offset": 124,
+          "size": 4,
+          "name": "match_limit"
+        },
+        {
+          "index": 8,
+          "type": "i32",
+          "offset": 128,
+          "size": 4,
+          "name": "depth_limit"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_real_compile_context_8",
+      "total_size": 128,
+      "fields": [
+        {
+          "index": 0,
+          "type": "%struct.pcre2_memctl = type { ptr addrspace(200), ptr addrspace(200), ptr addrspace(200) }",
+          "offset": 0,
+          "size": 48,
+          "name": "memctl"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16,
+          "name": "stack_guard"
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 64,
+          "size": 16,
+          "name": "stack_guard_data"
+        },
+        {
+          "index": 3,
+          "type": "ptr addrspace(200)",
+          "offset": 80,
+          "size": 16,
+          "name": "tables"
+        },
+        {
+          "index": 4,
+          "type": "i64",
+          "offset": 96,
+          "size": 8,
+          "name": "max_pattern_length"
+        },
+        {
+          "index": 5,
+          "type": "i16",
+          "offset": 104,
+          "size": 2,
+          "name": "bsr_convention"
+        },
+        {
+          "index": 6,
+          "type": "i16",
+          "offset": 106,
+          "size": 2,
+          "name": "newline_convention"
+        },
+        {
+          "index": 7,
+          "type": "i32",
+          "offset": 108,
+          "size": 4,
+          "name": "parens_nest_limit"
+        },
+        {
+          "index": 8,
+          "type": "i32",
+          "offset": 112,
+          "size": 4,
+          "name": "extra_options"
+        }
+      ]
+    },
+    {
+      "name": "struct.ucp_type_table",
+      "total_size": 6,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i16",
+          "offset": 0,
+          "size": 2
+        },
+        {
+          "index": 1,
+          "type": "i16",
+          "offset": 2,
+          "size": 2
+        },
+        {
+          "index": 2,
+          "type": "i16",
+          "offset": 4,
+          "size": 2
+        }
+      ]
+    },
+    {
+      "name": "struct.ucd_record",
+      "total_size": 12,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i8",
+          "offset": 0,
+          "size": 1
+        },
+        {
+          "index": 1,
+          "type": "i8",
+          "offset": 1,
+          "size": 1
+        },
+        {
+          "index": 2,
+          "type": "i8",
+          "offset": 2,
+          "size": 1
+        },
+        {
+          "index": 3,
+          "type": "i8",
+          "offset": 3,
+          "size": 1
+        },
+        {
+          "index": 4,
+          "type": "i32",
+          "offset": 4,
+          "size": 4
+        },
+        {
+          "index": 5,
+          "type": "i16",
+          "offset": 8,
+          "size": 2
+        },
+        {
+          "index": 6,
+          "type": "i16",
+          "offset": 10,
+          "size": 2
+        }
+      ]
+    },
+    {
+      "name": "struct.compile_block_8",
+      "total_size": 448,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "cx"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 16,
+          "size": 16,
+          "name": "lcc"
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 32,
+          "size": 16,
+          "name": "fcc"
+        },
+        {
+          "index": 3,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16,
+          "name": "cbits"
+        },
+        {
+          "index": 4,
+          "type": "ptr addrspace(200)",
+          "offset": 64,
+          "size": 16,
+          "name": "ctypes"
+        },
+        {
+          "index": 5,
+          "type": "ptr addrspace(200)",
+          "offset": 80,
+          "size": 16,
+          "name": "start_workspace"
+        },
+        {
+          "index": 6,
+          "type": "ptr addrspace(200)",
+          "offset": 96,
+          "size": 16,
+          "name": "start_code"
+        },
+        {
+          "index": 7,
+          "type": "ptr addrspace(200)",
+          "offset": 112,
+          "size": 16,
+          "name": "start_pattern"
+        },
+        {
+          "index": 8,
+          "type": "ptr addrspace(200)",
+          "offset": 128,
+          "size": 16,
+          "name": "end_pattern"
+        },
+        {
+          "index": 9,
+          "type": "ptr addrspace(200)",
+          "offset": 144,
+          "size": 16,
+          "name": "name_table"
+        },
+        {
+          "index": 10,
+          "type": "i64",
+          "offset": 160,
+          "size": 8,
+          "name": "workspace_size"
+        },
+        {
+          "index": 11,
+          "type": "[10 x i64]",
+          "offset": 168,
+          "size": 80,
+          "name": "small_ref_offset"
+        },
+        {
+          "index": 12,
+          "type": "i64",
+          "offset": 248,
+          "size": 8,
+          "name": "erroroffset"
+        },
+        {
+          "index": 13,
+          "type": "i16",
+          "offset": 256,
+          "size": 2,
+          "name": "names_found"
+        },
+        {
+          "index": 14,
+          "type": "i16",
+          "offset": 258,
+          "size": 2,
+          "name": "name_entry_size"
+        },
+        {
+          "index": 15,
+          "type": "i16",
+          "offset": 260,
+          "size": 2,
+          "name": "parens_depth"
+        },
+        {
+          "index": 16,
+          "type": "i16",
+          "offset": 262,
+          "size": 2,
+          "name": "assert_depth"
+        },
+        {
+          "index": 17,
+          "type": "ptr addrspace(200)",
+          "offset": 272,
+          "size": 16,
+          "name": "open_caps"
+        },
+        {
+          "index": 18,
+          "type": "ptr addrspace(200)",
+          "offset": 288,
+          "size": 16,
+          "name": "named_groups"
+        },
+        {
+          "index": 19,
+          "type": "i32",
+          "offset": 304,
+          "size": 4,
+          "name": "named_group_list_size"
+        },
+        {
+          "index": 20,
+          "type": "i32",
+          "offset": 308,
+          "size": 4,
+          "name": "external_options"
+        },
+        {
+          "index": 21,
+          "type": "i32",
+          "offset": 312,
+          "size": 4,
+          "name": "external_flags"
+        },
+        {
+          "index": 22,
+          "type": "i32",
+          "offset": 316,
+          "size": 4,
+          "name": "bracount"
+        },
+        {
+          "index": 23,
+          "type": "i32",
+          "offset": 320,
+          "size": 4,
+          "name": "lastcapture"
+        },
+        {
+          "index": 24,
+          "type": "ptr addrspace(200)",
+          "offset": 336,
+          "size": 16,
+          "name": "parsed_pattern"
+        },
+        {
+          "index": 25,
+          "type": "ptr addrspace(200)",
+          "offset": 352,
+          "size": 16,
+          "name": "parsed_pattern_end"
+        },
+        {
+          "index": 26,
+          "type": "ptr addrspace(200)",
+          "offset": 368,
+          "size": 16,
+          "name": "groupinfo"
+        },
+        {
+          "index": 27,
+          "type": "i32",
+          "offset": 384,
+          "size": 4,
+          "name": "top_backref"
+        },
+        {
+          "index": 28,
+          "type": "i32",
+          "offset": 388,
+          "size": 4,
+          "name": "backref_map"
+        },
+        {
+          "index": 29,
+          "type": "i32",
+          "offset": 392,
+          "size": 4,
+          "name": "nltype"
+        },
+        {
+          "index": 30,
+          "type": "i32",
+          "offset": 396,
+          "size": 4,
+          "name": "nllen"
+        },
+        {
+          "index": 31,
+          "type": "i32",
+          "offset": 400,
+          "size": 4,
+          "name": "class_range_start"
+        },
+        {
+          "index": 32,
+          "type": "i32",
+          "offset": 404,
+          "size": 4,
+          "name": "class_range_end"
+        },
+        {
+          "index": 33,
+          "type": "[4 x i8]",
+          "offset": 408,
+          "size": 4,
+          "name": "nl"
+        },
+        {
+          "index": 34,
+          "type": "i32",
+          "offset": 412,
+          "size": 4,
+          "name": "req_varyopt"
+        },
+        {
+          "index": 35,
+          "type": "i32",
+          "offset": 416,
+          "size": 4,
+          "name": "max_lookbehind"
+        },
+        {
+          "index": 36,
+          "type": "i32",
+          "offset": 420,
+          "size": 4,
+          "name": "had_accept"
+        },
+        {
+          "index": 37,
+          "type": "i32",
+          "offset": 424,
+          "size": 4,
+          "name": "had_pruneorskip"
+        },
+        {
+          "index": 38,
+          "type": "i32",
+          "offset": 428,
+          "size": 4,
+          "name": "had_recurse"
+        },
+        {
+          "index": 39,
+          "type": "i32",
+          "offset": 432,
+          "size": 4,
+          "name": "dupnames"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_real_code_8",
+      "total_size": 176,
+      "fields": [
+        {
+          "index": 0,
+          "type": "%struct.pcre2_memctl = type { ptr addrspace(200), ptr addrspace(200), ptr addrspace(200) }",
+          "offset": 0,
+          "size": 48,
+          "name": "memctl"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16,
+          "name": "tables"
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 64,
+          "size": 16,
+          "name": "executable_jit"
+        },
+        {
+          "index": 3,
+          "type": "[32 x i8]",
+          "offset": 80,
+          "size": 32,
+          "name": "start_bitmap"
+        },
+        {
+          "index": 4,
+          "type": "i64",
+          "offset": 112,
+          "size": 8,
+          "name": "blocksize"
+        },
+        {
+          "index": 5,
+          "type": "i32",
+          "offset": 120,
+          "size": 4,
+          "name": "magic_number"
+        },
+        {
+          "index": 6,
+          "type": "i32",
+          "offset": 124,
+          "size": 4,
+          "name": "compile_options"
+        },
+        {
+          "index": 7,
+          "type": "i32",
+          "offset": 128,
+          "size": 4,
+          "name": "overall_options"
+        },
+        {
+          "index": 8,
+          "type": "i32",
+          "offset": 132,
+          "size": 4,
+          "name": "extra_options"
+        },
+        {
+          "index": 9,
+          "type": "i32",
+          "offset": 136,
+          "size": 4,
+          "name": "flags"
+        },
+        {
+          "index": 10,
+          "type": "i32",
+          "offset": 140,
+          "size": 4,
+          "name": "limit_heap"
+        },
+        {
+          "index": 11,
+          "type": "i32",
+          "offset": 144,
+          "size": 4,
+          "name": "limit_match"
+        },
+        {
+          "index": 12,
+          "type": "i32",
+          "offset": 148,
+          "size": 4,
+          "name": "limit_depth"
+        },
+        {
+          "index": 13,
+          "type": "i32",
+          "offset": 152,
+          "size": 4,
+          "name": "first_codeunit"
+        },
+        {
+          "index": 14,
+          "type": "i32",
+          "offset": 156,
+          "size": 4,
+          "name": "last_codeunit"
+        },
+        {
+          "index": 15,
+          "type": "i16",
+          "offset": 160,
+          "size": 2,
+          "name": "bsr_convention"
+        },
+        {
+          "index": 16,
+          "type": "i16",
+          "offset": 162,
+          "size": 2,
+          "name": "newline_convention"
+        },
+        {
+          "index": 17,
+          "type": "i16",
+          "offset": 164,
+          "size": 2,
+          "name": "max_lookbehind"
+        },
+        {
+          "index": 18,
+          "type": "i16",
+          "offset": 166,
+          "size": 2,
+          "name": "minlength"
+        },
+        {
+          "index": 19,
+          "type": "i16",
+          "offset": 168,
+          "size": 2,
+          "name": "top_bracket"
+        },
+        {
+          "index": 20,
+          "type": "i16",
+          "offset": 170,
+          "size": 2,
+          "name": "top_backref"
+        },
+        {
+          "index": 21,
+          "type": "i16",
+          "offset": 172,
+          "size": 2,
+          "name": "name_entry_size"
+        },
+        {
+          "index": 22,
+          "type": "i16",
+          "offset": 174,
+          "size": 2,
+          "name": "name_count"
+        }
+      ]
+    },
+    {
+      "name": "struct.named_group_8",
+      "total_size": 32,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "type": "i32",
+          "offset": 16,
+          "size": 4,
+          "name": "number"
+        },
+        {
+          "index": 2,
+          "type": "i16",
+          "offset": 20,
+          "size": 2,
+          "name": "length"
+        },
+        {
+          "index": 3,
+          "type": "i16",
+          "offset": 22,
+          "size": 2,
+          "name": "isdup"
+        }
+      ]
+    },
+    {
+      "name": "struct.recurse_cache",
+      "total_size": 32,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "group"
+        },
+        {
+          "index": 1,
+          "type": "i32",
+          "offset": 16,
+          "size": 4,
+          "name": "groupnumber"
+        }
+      ]
+    },
+    {
+      "name": "struct.nest_save",
+      "total_size": 12,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i16",
+          "offset": 0,
+          "size": 2,
+          "name": "nest_depth"
+        },
+        {
+          "index": 1,
+          "type": "i16",
+          "offset": 2,
+          "size": 2,
+          "name": "reset_group"
+        },
+        {
+          "index": 2,
+          "type": "i16",
+          "offset": 4,
+          "size": 2,
+          "name": "max_group"
+        },
+        {
+          "index": 3,
+          "type": "i16",
+          "offset": 6,
+          "size": 2,
+          "name": "flags"
+        },
+        {
+          "index": 4,
+          "type": "i32",
+          "offset": 8,
+          "size": 4,
+          "name": "options"
+        }
+      ]
+    },
+    {
+      "name": "struct.open_capitem",
+      "total_size": 32,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "next"
+        },
+        {
+          "index": 1,
+          "type": "i16",
+          "offset": 16,
+          "size": 2,
+          "name": "number"
+        },
+        {
+          "index": 2,
+          "type": "i16",
+          "offset": 18,
+          "size": 2,
+          "name": "assert_depth"
+        }
+      ]
+    },
+    {
+      "name": "struct.branch_chain_8",
+      "total_size": 32,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "outer"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 16,
+          "size": 16,
+          "name": "current_branch"
+        }
+      ]
+    },
+    {
+      "name": "struct._RuneLocale",
+      "total_size": 4320,
+      "fields": [
+        {
+          "index": 0,
+          "type": "[8 x i8]",
+          "offset": 0,
+          "size": 8
+        },
+        {
+          "index": 1,
+          "type": "[32 x i8]",
+          "offset": 8,
+          "size": 32
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16
+        },
+        {
+          "index": 3,
+          "type": "ptr addrspace(200)",
+          "offset": 64,
+          "size": 16
+        },
+        {
+          "index": 4,
+          "type": "i32",
+          "offset": 80,
+          "size": 4
+        },
+        {
+          "index": 5,
+          "type": "[256 x i64]",
+          "offset": 88,
+          "size": 2048
+        },
+        {
+          "index": 6,
+          "type": "[256 x i32]",
+          "offset": 2136,
+          "size": 1024
+        },
+        {
+          "index": 7,
+          "type": "[256 x i32]",
+          "offset": 3160,
+          "size": 1024
+        },
+        {
+          "index": 8,
+          "type": "%struct._RuneRange = type { i32, ptr addrspace(200) }",
+          "offset": 4192,
+          "size": 32
+        },
+        {
+          "index": 9,
+          "type": "%struct._RuneRange = type { i32, ptr addrspace(200) }",
+          "offset": 4224,
+          "size": 32
+        },
+        {
+          "index": 10,
+          "type": "%struct._RuneRange = type { i32, ptr addrspace(200) }",
+          "offset": 4256,
+          "size": 32
+        },
+        {
+          "index": 11,
+          "type": "ptr addrspace(200)",
+          "offset": 4288,
+          "size": 16
+        },
+        {
+          "index": 12,
+          "type": "i32",
+          "offset": 4304,
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "struct._RuneRange",
+      "total_size": 32,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i32",
+          "offset": 0,
+          "size": 4
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 16,
+          "size": 16
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_output_context",
+      "total_size": 48,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "output"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 16,
+          "size": 16,
+          "name": "output_end"
+        },
+        {
+          "index": 2,
+          "type": "i64",
+          "offset": 32,
+          "size": 8,
+          "name": "output_size"
+        },
+        {
+          "index": 3,
+          "type": "[8 x i8]",
+          "offset": 40,
+          "size": 8,
+          "name": "out_str"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_callout_block_8",
+      "total_size": 160,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i32",
+          "offset": 0,
+          "size": 4,
+          "name": "version"
+        },
+        {
+          "index": 1,
+          "type": "i32",
+          "offset": 4,
+          "size": 4,
+          "name": "callout_number"
+        },
+        {
+          "index": 2,
+          "type": "i32",
+          "offset": 8,
+          "size": 4,
+          "name": "capture_top"
+        },
+        {
+          "index": 3,
+          "type": "i32",
+          "offset": 12,
+          "size": 4,
+          "name": "capture_last"
+        },
+        {
+          "index": 4,
+          "type": "ptr addrspace(200)",
+          "offset": 16,
+          "size": 16,
+          "name": "offset_vector"
+        },
+        {
+          "index": 5,
+          "type": "ptr addrspace(200)",
+          "offset": 32,
+          "size": 16,
+          "name": "mark"
+        },
+        {
+          "index": 6,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16,
+          "name": "subject"
+        },
+        {
+          "index": 7,
+          "type": "i64",
+          "offset": 64,
+          "size": 8,
+          "name": "subject_length"
+        },
+        {
+          "index": 8,
+          "type": "i64",
+          "offset": 72,
+          "size": 8,
+          "name": "start_match"
+        },
+        {
+          "index": 9,
+          "type": "i64",
+          "offset": 80,
+          "size": 8,
+          "name": "current_position"
+        },
+        {
+          "index": 10,
+          "type": "i64",
+          "offset": 88,
+          "size": 8,
+          "name": "pattern_position"
+        },
+        {
+          "index": 11,
+          "type": "i64",
+          "offset": 96,
+          "size": 8,
+          "name": "next_item_length"
+        },
+        {
+          "index": 12,
+          "type": "i64",
+          "offset": 104,
+          "size": 8,
+          "name": "callout_string_offset"
+        },
+        {
+          "index": 13,
+          "type": "i64",
+          "offset": 112,
+          "size": 8,
+          "name": "callout_string_length"
+        },
+        {
+          "index": 14,
+          "type": "ptr addrspace(200)",
+          "offset": 128,
+          "size": 16,
+          "name": "callout_string"
+        },
+        {
+          "index": 15,
+          "type": "i32",
+          "offset": 144,
+          "size": 4,
+          "name": "callout_flags"
+        }
+      ]
+    },
+    {
+      "name": "struct.dfa_match_block_8",
+      "total_size": 272,
+      "fields": [
+        {
+          "index": 0,
+          "type": "%struct.pcre2_memctl = type { ptr addrspace(200), ptr addrspace(200), ptr addrspace(200) }",
+          "offset": 0,
+          "size": 48,
+          "name": "memctl"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16,
+          "name": "start_code"
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 64,
+          "size": 16,
+          "name": "start_subject"
+        },
+        {
+          "index": 3,
+          "type": "ptr addrspace(200)",
+          "offset": 80,
+          "size": 16,
+          "name": "end_subject"
+        },
+        {
+          "index": 4,
+          "type": "ptr addrspace(200)",
+          "offset": 96,
+          "size": 16,
+          "name": "start_used_ptr"
+        },
+        {
+          "index": 5,
+          "type": "ptr addrspace(200)",
+          "offset": 112,
+          "size": 16,
+          "name": "last_used_ptr"
+        },
+        {
+          "index": 6,
+          "type": "ptr addrspace(200)",
+          "offset": 128,
+          "size": 16,
+          "name": "tables"
+        },
+        {
+          "index": 7,
+          "type": "i64",
+          "offset": 144,
+          "size": 8,
+          "name": "start_offset"
+        },
+        {
+          "index": 8,
+          "type": "i64",
+          "offset": 152,
+          "size": 8,
+          "name": "heap_limit"
+        },
+        {
+          "index": 9,
+          "type": "i64",
+          "offset": 160,
+          "size": 8,
+          "name": "heap_used"
+        },
+        {
+          "index": 10,
+          "type": "i32",
+          "offset": 168,
+          "size": 4,
+          "name": "match_limit"
+        },
+        {
+          "index": 11,
+          "type": "i32",
+          "offset": 172,
+          "size": 4,
+          "name": "match_limit_depth"
+        },
+        {
+          "index": 12,
+          "type": "i32",
+          "offset": 176,
+          "size": 4,
+          "name": "match_call_count"
+        },
+        {
+          "index": 13,
+          "type": "i32",
+          "offset": 180,
+          "size": 4,
+          "name": "moptions"
+        },
+        {
+          "index": 14,
+          "type": "i32",
+          "offset": 184,
+          "size": 4,
+          "name": "poptions"
+        },
+        {
+          "index": 15,
+          "type": "i32",
+          "offset": 188,
+          "size": 4,
+          "name": "nltype"
+        },
+        {
+          "index": 16,
+          "type": "i32",
+          "offset": 192,
+          "size": 4,
+          "name": "nllen"
+        },
+        {
+          "index": 17,
+          "type": "i32",
+          "offset": 196,
+          "size": 4,
+          "name": "allowemptypartial"
+        },
+        {
+          "index": 18,
+          "type": "[4 x i8]",
+          "offset": 200,
+          "size": 4,
+          "name": "nl"
+        },
+        {
+          "index": 19,
+          "type": "i16",
+          "offset": 204,
+          "size": 2,
+          "name": "bsr_convention"
+        },
+        {
+          "index": 20,
+          "type": "ptr addrspace(200)",
+          "offset": 208,
+          "size": 16,
+          "name": "cb"
+        },
+        {
+          "index": 21,
+          "type": "ptr addrspace(200)",
+          "offset": 224,
+          "size": 16,
+          "name": "callout_data"
+        },
+        {
+          "index": 22,
+          "type": "ptr addrspace(200)",
+          "offset": 240,
+          "size": 16,
+          "name": "callout"
+        },
+        {
+          "index": 23,
+          "type": "ptr addrspace(200)",
+          "offset": 256,
+          "size": 16,
+          "name": "recursive"
+        }
+      ]
+    },
+    {
+      "name": "struct.RWS_anchor",
+      "total_size": 32,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "next"
+        },
+        {
+          "index": 1,
+          "type": "i32",
+          "offset": 16,
+          "size": 4,
+          "name": "size"
+        },
+        {
+          "index": 2,
+          "type": "i32",
+          "offset": 20,
+          "size": 4,
+          "name": "free"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_real_match_data_8",
+      "total_size": 1048736,
+      "fields": [
+        {
+          "index": 0,
+          "type": "%struct.pcre2_memctl = type { ptr addrspace(200), ptr addrspace(200), ptr addrspace(200) }",
+          "offset": 0,
+          "size": 48,
+          "name": "memctl"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16,
+          "name": "code"
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 64,
+          "size": 16,
+          "name": "subject"
+        },
+        {
+          "index": 3,
+          "type": "ptr addrspace(200)",
+          "offset": 80,
+          "size": 16,
+          "name": "mark"
+        },
+        {
+          "index": 4,
+          "type": "ptr addrspace(200)",
+          "offset": 96,
+          "size": 16,
+          "name": "heapframes"
+        },
+        {
+          "index": 5,
+          "type": "i64",
+          "offset": 112,
+          "size": 8,
+          "name": "heapframes_size"
+        },
+        {
+          "index": 6,
+          "type": "i64",
+          "offset": 120,
+          "size": 8,
+          "name": "leftchar"
+        },
+        {
+          "index": 7,
+          "type": "i64",
+          "offset": 128,
+          "size": 8,
+          "name": "rightchar"
+        },
+        {
+          "index": 8,
+          "type": "i64",
+          "offset": 136,
+          "size": 8,
+          "name": "startchar"
+        },
+        {
+          "index": 9,
+          "type": "i8",
+          "offset": 144,
+          "size": 1,
+          "name": "matchedby"
+        },
+        {
+          "index": 10,
+          "type": "i8",
+          "offset": 145,
+          "size": 1,
+          "name": "flags"
+        },
+        {
+          "index": 11,
+          "type": "i16",
+          "offset": 146,
+          "size": 2,
+          "name": "oveccount"
+        },
+        {
+          "index": 12,
+          "type": "i32",
+          "offset": 148,
+          "size": 4,
+          "name": "rc"
+        },
+        {
+          "index": 13,
+          "type": "[131072 x i64]",
+          "offset": 152,
+          "size": 1048576,
+          "name": "ovector"
+        }
+      ]
+    },
+    {
+      "name": "struct.dfa_recursion_info",
+      "total_size": 48,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "prevrec"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 16,
+          "size": 16,
+          "name": "subject_position"
+        },
+        {
+          "index": 2,
+          "type": "i32",
+          "offset": 32,
+          "size": 4,
+          "name": "group_num"
+        }
+      ]
+    },
+    {
+      "name": "struct.match_block_8",
+      "total_size": 432,
+      "fields": [
+        {
+          "index": 0,
+          "type": "%struct.pcre2_memctl = type { ptr addrspace(200), ptr addrspace(200), ptr addrspace(200) }",
+          "offset": 0,
+          "size": 48,
+          "name": "memctl"
+        },
+        {
+          "index": 1,
+          "type": "i64",
+          "offset": 48,
+          "size": 8,
+          "name": "heap_limit"
+        },
+        {
+          "index": 2,
+          "type": "i32",
+          "offset": 56,
+          "size": 4,
+          "name": "match_limit"
+        },
+        {
+          "index": 3,
+          "type": "i32",
+          "offset": 60,
+          "size": 4,
+          "name": "match_limit_depth"
+        },
+        {
+          "index": 4,
+          "type": "i32",
+          "offset": 64,
+          "size": 4,
+          "name": "match_call_count"
+        },
+        {
+          "index": 5,
+          "type": "i32",
+          "offset": 68,
+          "size": 4,
+          "name": "hitend"
+        },
+        {
+          "index": 6,
+          "type": "i32",
+          "offset": 72,
+          "size": 4,
+          "name": "hasthen"
+        },
+        {
+          "index": 7,
+          "type": "i32",
+          "offset": 76,
+          "size": 4,
+          "name": "allowemptypartial"
+        },
+        {
+          "index": 8,
+          "type": "ptr addrspace(200)",
+          "offset": 80,
+          "size": 16,
+          "name": "lcc"
+        },
+        {
+          "index": 9,
+          "type": "ptr addrspace(200)",
+          "offset": 96,
+          "size": 16,
+          "name": "fcc"
+        },
+        {
+          "index": 10,
+          "type": "ptr addrspace(200)",
+          "offset": 112,
+          "size": 16,
+          "name": "ctypes"
+        },
+        {
+          "index": 11,
+          "type": "i64",
+          "offset": 128,
+          "size": 8,
+          "name": "start_offset"
+        },
+        {
+          "index": 12,
+          "type": "i64",
+          "offset": 136,
+          "size": 8,
+          "name": "end_offset_top"
+        },
+        {
+          "index": 13,
+          "type": "i16",
+          "offset": 144,
+          "size": 2,
+          "name": "partial"
+        },
+        {
+          "index": 14,
+          "type": "i16",
+          "offset": 146,
+          "size": 2,
+          "name": "bsr_convention"
+        },
+        {
+          "index": 15,
+          "type": "i16",
+          "offset": 148,
+          "size": 2,
+          "name": "name_count"
+        },
+        {
+          "index": 16,
+          "type": "i16",
+          "offset": 150,
+          "size": 2,
+          "name": "name_entry_size"
+        },
+        {
+          "index": 17,
+          "type": "ptr addrspace(200)",
+          "offset": 160,
+          "size": 16,
+          "name": "name_table"
+        },
+        {
+          "index": 18,
+          "type": "ptr addrspace(200)",
+          "offset": 176,
+          "size": 16,
+          "name": "start_code"
+        },
+        {
+          "index": 19,
+          "type": "ptr addrspace(200)",
+          "offset": 192,
+          "size": 16,
+          "name": "start_subject"
+        },
+        {
+          "index": 20,
+          "type": "ptr addrspace(200)",
+          "offset": 208,
+          "size": 16,
+          "name": "check_subject"
+        },
+        {
+          "index": 21,
+          "type": "ptr addrspace(200)",
+          "offset": 224,
+          "size": 16,
+          "name": "end_subject"
+        },
+        {
+          "index": 22,
+          "type": "ptr addrspace(200)",
+          "offset": 240,
+          "size": 16,
+          "name": "end_match_ptr"
+        },
+        {
+          "index": 23,
+          "type": "ptr addrspace(200)",
+          "offset": 256,
+          "size": 16,
+          "name": "start_used_ptr"
+        },
+        {
+          "index": 24,
+          "type": "ptr addrspace(200)",
+          "offset": 272,
+          "size": 16,
+          "name": "last_used_ptr"
+        },
+        {
+          "index": 25,
+          "type": "ptr addrspace(200)",
+          "offset": 288,
+          "size": 16,
+          "name": "mark"
+        },
+        {
+          "index": 26,
+          "type": "ptr addrspace(200)",
+          "offset": 304,
+          "size": 16,
+          "name": "nomatch_mark"
+        },
+        {
+          "index": 27,
+          "type": "ptr addrspace(200)",
+          "offset": 320,
+          "size": 16,
+          "name": "verb_ecode_ptr"
+        },
+        {
+          "index": 28,
+          "type": "ptr addrspace(200)",
+          "offset": 336,
+          "size": 16,
+          "name": "verb_skip_ptr"
+        },
+        {
+          "index": 29,
+          "type": "i32",
+          "offset": 352,
+          "size": 4,
+          "name": "verb_current_recurse"
+        },
+        {
+          "index": 30,
+          "type": "i32",
+          "offset": 356,
+          "size": 4,
+          "name": "moptions"
+        },
+        {
+          "index": 31,
+          "type": "i32",
+          "offset": 360,
+          "size": 4,
+          "name": "poptions"
+        },
+        {
+          "index": 32,
+          "type": "i32",
+          "offset": 364,
+          "size": 4,
+          "name": "skip_arg_count"
+        },
+        {
+          "index": 33,
+          "type": "i32",
+          "offset": 368,
+          "size": 4,
+          "name": "ignore_skip_arg"
+        },
+        {
+          "index": 34,
+          "type": "i32",
+          "offset": 372,
+          "size": 4,
+          "name": "nltype"
+        },
+        {
+          "index": 35,
+          "type": "i32",
+          "offset": 376,
+          "size": 4,
+          "name": "nllen"
+        },
+        {
+          "index": 36,
+          "type": "[4 x i8]",
+          "offset": 380,
+          "size": 4,
+          "name": "nl"
+        },
+        {
+          "index": 37,
+          "type": "ptr addrspace(200)",
+          "offset": 384,
+          "size": 16,
+          "name": "cb"
+        },
+        {
+          "index": 38,
+          "type": "ptr addrspace(200)",
+          "offset": 400,
+          "size": 16,
+          "name": "callout_data"
+        },
+        {
+          "index": 39,
+          "type": "ptr addrspace(200)",
+          "offset": 416,
+          "size": 16,
+          "name": "callout"
+        }
+      ]
+    },
+    {
+      "name": "struct.heapframe",
+      "total_size": 1048768,
+      "fields": [
+        {
+          "index": 0,
+          "type": "ptr addrspace(200)",
+          "offset": 0,
+          "size": 16,
+          "name": "ecode"
+        },
+        {
+          "index": 1,
+          "type": "[2 x ptr addrspace(200)]",
+          "offset": 16,
+          "size": 32,
+          "name": "temp_sptr"
+        },
+        {
+          "index": 2,
+          "type": "i64",
+          "offset": 48,
+          "size": 8,
+          "name": "length"
+        },
+        {
+          "index": 3,
+          "type": "i64",
+          "offset": 56,
+          "size": 8,
+          "name": "back_frame"
+        },
+        {
+          "index": 4,
+          "type": "i64",
+          "offset": 64,
+          "size": 8,
+          "name": "temp_size"
+        },
+        {
+          "index": 5,
+          "type": "i32",
+          "offset": 72,
+          "size": 4,
+          "name": "rdepth"
+        },
+        {
+          "index": 6,
+          "type": "i32",
+          "offset": 76,
+          "size": 4,
+          "name": "group_frame_type"
+        },
+        {
+          "index": 7,
+          "type": "[4 x i32]",
+          "offset": 80,
+          "size": 16,
+          "name": "temp_32"
+        },
+        {
+          "index": 8,
+          "type": "i8",
+          "offset": 96,
+          "size": 1,
+          "name": "return_id"
+        },
+        {
+          "index": 9,
+          "type": "i8",
+          "offset": 97,
+          "size": 1,
+          "name": "op"
+        },
+        {
+          "index": 10,
+          "type": "[6 x i8]",
+          "offset": 98,
+          "size": 6,
+          "name": "occu"
+        },
+        {
+          "index": 11,
+          "type": "ptr addrspace(200)",
+          "offset": 112,
+          "size": 16,
+          "name": "eptr"
+        },
+        {
+          "index": 12,
+          "type": "ptr addrspace(200)",
+          "offset": 128,
+          "size": 16,
+          "name": "start_match"
+        },
+        {
+          "index": 13,
+          "type": "ptr addrspace(200)",
+          "offset": 144,
+          "size": 16,
+          "name": "mark"
+        },
+        {
+          "index": 14,
+          "type": "i32",
+          "offset": 160,
+          "size": 4,
+          "name": "current_recurse"
+        },
+        {
+          "index": 15,
+          "type": "i32",
+          "offset": 164,
+          "size": 4,
+          "name": "capture_last"
+        },
+        {
+          "index": 16,
+          "type": "i64",
+          "offset": 168,
+          "size": 8,
+          "name": "last_group_offset"
+        },
+        {
+          "index": 17,
+          "type": "i64",
+          "offset": 176,
+          "size": 8,
+          "name": "offset_top"
+        },
+        {
+          "index": 18,
+          "type": "[131072 x i64]",
+          "offset": 184,
+          "size": 1048576,
+          "name": "ovector"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_callout_enumerate_block_8",
+      "total_size": 64,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i32",
+          "offset": 0,
+          "size": 4,
+          "name": "version"
+        },
+        {
+          "index": 1,
+          "type": "i64",
+          "offset": 8,
+          "size": 8,
+          "name": "pattern_position"
+        },
+        {
+          "index": 2,
+          "type": "i64",
+          "offset": 16,
+          "size": 8,
+          "name": "next_item_length"
+        },
+        {
+          "index": 3,
+          "type": "i32",
+          "offset": 24,
+          "size": 4,
+          "name": "callout_number"
+        },
+        {
+          "index": 4,
+          "type": "i64",
+          "offset": 32,
+          "size": 8,
+          "name": "callout_string_offset"
+        },
+        {
+          "index": 5,
+          "type": "i64",
+          "offset": 40,
+          "size": 8,
+          "name": "callout_string_length"
+        },
+        {
+          "index": 6,
+          "type": "ptr addrspace(200)",
+          "offset": 48,
+          "size": 16,
+          "name": "callout_string"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_serialized_data",
+      "total_size": 16,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i32",
+          "offset": 0,
+          "size": 4,
+          "name": "magic"
+        },
+        {
+          "index": 1,
+          "type": "i32",
+          "offset": 4,
+          "size": 4,
+          "name": "version"
+        },
+        {
+          "index": 2,
+          "type": "i32",
+          "offset": 8,
+          "size": 4,
+          "name": "config"
+        },
+        {
+          "index": 3,
+          "type": "i32",
+          "offset": 12,
+          "size": 4,
+          "name": "number_of_codes"
+        }
+      ]
+    },
+    {
+      "name": "struct.pcre2_substitute_callout_block_8",
+      "total_size": 96,
+      "fields": [
+        {
+          "index": 0,
+          "type": "i32",
+          "offset": 0,
+          "size": 4,
+          "name": "version"
+        },
+        {
+          "index": 1,
+          "type": "ptr addrspace(200)",
+          "offset": 16,
+          "size": 16,
+          "name": "input"
+        },
+        {
+          "index": 2,
+          "type": "ptr addrspace(200)",
+          "offset": 32,
+          "size": 16,
+          "name": "output"
+        },
+        {
+          "index": 3,
+          "type": "[2 x i64]",
+          "offset": 48,
+          "size": 16,
+          "name": "output_offsets"
+        },
+        {
+          "index": 4,
+          "type": "ptr addrspace(200)",
+          "offset": 64,
+          "size": 16,
+          "name": "ovector"
+        },
+        {
+          "index": 5,
+          "type": "i32",
+          "offset": 80,
+          "size": 4,
+          "name": "oveccount"
+        },
+        {
+          "index": 6,
+          "type": "i32",
+          "offset": 84,
+          "size": 4,
+          "name": "subscount"
+        }
+      ]
+    }
+  ],
+  "defined_functions": [
+    {
+      "name": "_pcre2_auto_possessify_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          2,
+          20
+        ]
+      },
+      "param_struct_types": {
+        "1": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "get_chr_property_list",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.ucd_record": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "compare_opcodes",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          2,
+          3,
+          4,
+          38
+        ],
+        "struct.ucd_record": [
+          1,
+          3,
+          5
+        ]
+      },
+      "param_struct_types": {
+        "3": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_code_copy_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_code_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          2
+        ],
+        "struct.pcre2_real_code_8": [
+          0,
+          1,
+          2,
+          4,
+          9
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl",
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_code_copy_with_tables_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_code_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_code_8": [
+          0,
+          1,
+          2,
+          4,
+          9
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl",
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_code_free_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_code_8": [
+          1,
+          9
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl",
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "_pcre2_check_escape_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          21,
+          22
+        ]
+      },
+      "param_struct_types": {
+        "7": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_compile_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_code_8",
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          29,
+          30,
+          33,
+          34,
+          35,
+          36,
+          38
+        ],
+        "struct.named_group_8": [
+          0,
+          1,
+          2
+        ],
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_code_8": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22
+        ],
+        "struct.pcre2_real_compile_context_8": [
+          0,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "struct.pso": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "struct.ucd_record": [
+          4
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_code_8": [
+          2
+        ]
+      },
+      "param_struct_types": {
+        "5": [
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "parse_regex",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          29,
+          30,
+          33,
+          39
+        ],
+        "struct.named_group_8": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "struct.nest_save": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_compile_context_8": [
+          7,
+          8
+        ]
+      },
+      "address_taken_fields": {
+        "struct.compile_block_8": [
+          30
+        ]
+      },
+      "param_struct_types": {
+        "3": [
+          "struct.compile_block_8",
+          "struct.pcre2_memctl",
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "check_lookbehinds",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          12,
+          35
+        ]
+      },
+      "param_struct_types": {
+        "2": [
+          "struct.parsed_recurse_check"
+        ],
+        "3": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "compile_regex",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.branch_chain_8": [
+          1
+        ],
+        "struct.compile_block_8": [
+          0,
+          2,
+          3,
+          5,
+          7,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          21,
+          22,
+          23,
+          27,
+          28,
+          31,
+          32,
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "struct.named_group_8": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "struct.open_capitem": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_compile_context_8": [
+          1,
+          2,
+          8
+        ],
+        "struct.ucd_record": [
+          3,
+          4
+        ]
+      },
+      "param_struct_types": {
+        "9": [
+          "struct.branch_chain_8"
+        ],
+        "10": [
+          "struct.compile_block_8",
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "add_name_to_table",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          9,
+          14
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.compile_block_8"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "memcmp",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "is_anchored",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          20,
+          28,
+          37
+        ]
+      },
+      "param_struct_types": {
+        "2": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "is_startline",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          20,
+          28,
+          37
+        ]
+      },
+      "param_struct_types": {
+        "2": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "add_to_class_internal",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          2,
+          31,
+          32
+        ],
+        "struct.ucd_record": [
+          3,
+          4
+        ]
+      },
+      "param_struct_types": {
+        "3": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "find_dupname_details",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          7,
+          9,
+          12,
+          13,
+          14,
+          27,
+          28
+        ]
+      },
+      "param_struct_types": {
+        "5": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "get_branchlength",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.branch_chain_8": [
+          1
+        ],
+        "struct.compile_block_8": [
+          7,
+          11,
+          12,
+          13,
+          18,
+          20,
+          21,
+          22,
+          24,
+          26,
+          35
+        ],
+        "struct.named_group_8": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "struct.parsed_recurse_check": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "3": [
+          "struct.branch_chain_8"
+        ],
+        "4": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "manage_callouts",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          7
+        ]
+      },
+      "param_struct_types": {
+        "4": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "get_ucp",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct._RuneLocale": [
+          5,
+          6
+        ],
+        "struct.compile_block_8": [
+          4,
+          8
+        ]
+      },
+      "param_struct_types": {
+        "5": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "read_name",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.compile_block_8": [
+          4,
+          7
+        ],
+        "struct.ucd_record": [
+          1
+        ]
+      },
+      "param_struct_types": {
+        "8": [
+          "struct.compile_block_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_config_8",
+      "externally_visible": true,
+      "external_calls": [
+        {
+          "callee": "strlen",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "_pcre2_memctl_malloc_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          0,
+          1,
+          2
+        ]
+      },
+      "param_struct_types": {
+        "1": [
+          "struct.pcre2_memctl"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "malloc",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": "struct.pcre2_memctl"
+        }
+      ]
+    },
+    {
+      "name": "default_malloc",
+      "externally_visible": true,
+      "external_calls": [
+        {
+          "callee": "malloc",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "default_free",
+      "externally_visible": true,
+      "external_calls": [
+        {
+          "callee": "free",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "pcre2_general_context_create_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_general_context_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_general_context_8": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "pcre2_compile_context_create_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_compile_context_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          0,
+          2
+        ],
+        "struct.pcre2_real_general_context_8": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "malloc",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": "struct.pcre2_memctl"
+        }
+      ]
+    },
+    {
+      "name": "pcre2_match_context_create_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_match_context_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          0,
+          2
+        ],
+        "struct.pcre2_real_general_context_8": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "malloc",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": "struct.pcre2_memctl"
+        }
+      ]
+    },
+    {
+      "name": "pcre2_convert_context_create_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_convert_context_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          0,
+          2
+        ],
+        "struct.pcre2_real_general_context_8": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "malloc",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": "struct.pcre2_memctl"
+        }
+      ]
+    },
+    {
+      "name": "pcre2_general_context_copy_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_general_context_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          2
+        ],
+        "struct.pcre2_real_general_context_8": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_compile_context_copy_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_compile_context_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          2
+        ],
+        "struct.pcre2_real_compile_context_8": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_match_context_copy_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_match_context_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          2
+        ],
+        "struct.pcre2_real_match_context_8": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_convert_context_copy_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_convert_context_8",
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          2
+        ],
+        "struct.pcre2_real_convert_context_8": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_general_context_free_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_compile_context_free_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_match_context_free_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_convert_context_free_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_character_tables_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_compile_context_8": [
+          3
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_bsr_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_compile_context_8": [
+          5
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_max_pattern_length_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_compile_context_8": [
+          4
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_newline_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_compile_context_8": [
+          6
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_parens_nest_limit_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_compile_context_8": [
+          7
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_compile_extra_options_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_compile_context_8": [
+          8
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_compile_recursion_guard_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_compile_context_8": [
+          1,
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_compile_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_callout_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_context_8": [
+          1,
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_substitute_callout_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_context_8": [
+          3,
+          4
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_heap_limit_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_context_8": [
+          6
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_match_limit_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_context_8": [
+          7
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_depth_limit_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_context_8": [
+          8
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_offset_limit_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_context_8": [
+          5
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_recursion_limit_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_context_8": [
+          8
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_recursion_memory_management_8",
+      "externally_visible": true,
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_glob_separator_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_convert_context_8": [
+          1
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_convert_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_set_glob_escape_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct._RuneLocale": [
+          5
+        ],
+        "struct.pcre2_real_convert_context_8": [
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_convert_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_pattern_convert_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct._RuneLocale": [
+          5
+        ],
+        "struct.pcre2_output_context": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "struct.pcre2_real_convert_context_8": [
+          1,
+          2
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_output_context": [
+          3
+        ]
+      },
+      "param_struct_types": {
+        "5": [
+          "struct.pcre2_real_convert_context_8"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "pcre2_dfa_match_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.RWS_anchor": [
+          0,
+          1
+        ],
+        "struct.dfa_match_block_8": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "struct.pcre2_callout_block_8": [
+          2,
+          5,
+          6,
+          7,
+          15
+        ],
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_code_8": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          21,
+          22
+        ],
+        "struct.pcre2_real_match_context_8": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8
+        ],
+        "struct.pcre2_real_match_data_8": [
+          0,
+          1,
+          2,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "struct.ucd_record": [
+          4
+        ]
+      },
+      "address_taken_fields": {
+        "struct.dfa_match_block_8": [
+          16
+        ],
+        "struct.pcre2_real_code_8": [
+          3
+        ],
+        "struct.pcre2_real_match_context_8": [
+          6
+        ],
+        "struct.pcre2_real_match_data_8": [
+          2,
+          8,
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ],
+        "5": [
+          "struct.pcre2_memctl",
+          "struct.pcre2_real_match_data_8"
+        ],
+        "6": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "internal_dfa_match",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.RWS_anchor": [
+          0,
+          1,
+          2
+        ],
+        "struct.dfa_match_block_8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "struct.dfa_recursion_info": [
+          1,
+          2
+        ],
+        "struct.pcre2_callout_block_8": [
+          1,
+          4,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "struct.pcre2_memctl": [
+          2
+        ],
+        "struct.stateblock": [
+          0
+        ],
+        "struct.ucd_record": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "struct.verbitem": [
+          1,
+          2
+        ]
+      },
+      "address_taken_fields": {
+        "struct.dfa_match_block_8": [
+          16
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.dfa_match_block_8",
+          "struct.pcre2_memctl"
+        ],
+        "9": [
+          "struct.RWS_anchor"
+        ]
+      }
+    },
+    {
+      "name": "more_workspace",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.RWS_anchor": [
+          0,
+          1,
+          2
+        ],
+        "struct.dfa_match_block_8": [
+          0,
+          8,
+          9
+        ],
+        "struct.pcre2_memctl": [
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.RWS_anchor"
+        ],
+        "2": [
+          "struct.dfa_match_block_8",
+          "struct.pcre2_memctl"
+        ]
+      }
+    },
+    {
+      "name": "_pcre2_extuni_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.ucd_record": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "pcre2_jit_compile_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          7
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_jit_match_8",
+      "externally_visible": true,
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ],
+        "5": [
+          "struct.pcre2_real_match_data_8"
+        ],
+        "6": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_jit_free_unused_memory_8",
+      "externally_visible": true,
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_general_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_jit_stack_create_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_jit_stack_8",
+      "param_struct_types": {
+        "2": [
+          "struct.pcre2_real_general_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_jit_stack_assign_8",
+      "externally_visible": true,
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_jit_stack_free_8",
+      "externally_visible": true,
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_jit_stack_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_maketables_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct._RuneLocale": [
+          5,
+          6,
+          7
+        ],
+        "struct.pcre2_memctl": [
+          2
+        ],
+        "struct.pcre2_real_general_context_8": [
+          0
+        ]
+      },
+      "address_taken_fields": {
+        "struct._RuneLocale": [
+          6,
+          7
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "malloc",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "pcre2_maketables_free_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "free",
+          "arg_struct_types": [
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "pcre2_match_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.match_block_8": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "struct.pcre2_callout_block_8": [
+          6,
+          7,
+          8,
+          15
+        ],
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_code_8": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          21,
+          22
+        ],
+        "struct.pcre2_real_match_context_8": [
+          1,
+          2,
+          5,
+          6,
+          7
+        ],
+        "struct.pcre2_real_match_data_8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "struct.ucd_record": [
+          4
+        ]
+      },
+      "address_taken_fields": {
+        "struct.match_block_8": [
+          25,
+          35
+        ],
+        "struct.pcre2_real_code_8": [
+          3
+        ],
+        "struct.pcre2_real_match_data_8": [
+          8
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ],
+        "5": [
+          "struct.pcre2_memctl",
+          "struct.pcre2_real_match_data_8"
+        ],
+        "6": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "memchr",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "match",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.heapframe": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "struct.match_block_8": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "struct.pcre2_callout_block_8": [
+          15
+        ],
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_match_data_8": [
+          0,
+          4,
+          5,
+          11,
+          13
+        ],
+        "struct.ucd_record": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ]
+      },
+      "address_taken_fields": {
+        "struct.heapframe": [
+          1,
+          7,
+          10,
+          18
+        ],
+        "struct.match_block_8": [
+          35
+        ],
+        "struct.pcre2_real_match_data_8": [
+          13
+        ]
+      },
+      "param_struct_types": {
+        "4": [
+          "struct.pcre2_memctl",
+          "struct.pcre2_real_match_data_8"
+        ],
+        "5": [
+          "struct.match_block_8"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "bcmp",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "bcmp",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "bcmp",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "bcmp",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "bcmp",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        },
+        {
+          "callee": "bcmp",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "match_ref",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.heapframe": [
+          11,
+          17,
+          18
+        ],
+        "struct.match_block_8": [
+          8,
+          13,
+          19,
+          21,
+          31
+        ],
+        "struct.ucd_record": [
+          3,
+          4
+        ]
+      },
+      "param_struct_types": {
+        "2": [
+          "struct.heapframe"
+        ],
+        "3": [
+          "struct.match_block_8"
+        ]
+      },
+      "external_calls": [
+        {
+          "callee": "bcmp",
+          "arg_struct_types": [
+            null,
+            null,
+            null
+          ],
+          "return_struct_type": null
+        }
+      ]
+    },
+    {
+      "name": "do_callout",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.heapframe": [
+          0,
+          11,
+          15,
+          16,
+          17
+        ],
+        "struct.match_block_8": [
+          19,
+          26,
+          37,
+          38,
+          39
+        ],
+        "struct.pcre2_callout_block_8": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "address_taken_fields": {
+        "struct.heapframe": [
+          16
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.heapframe"
+        ],
+        "1": [
+          "struct.match_block_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_match_data_create_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_match_data_8",
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_data_8": [
+          4,
+          10,
+          11
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_match_data_8": [
+          4
+        ]
+      },
+      "param_struct_types": {
+        "1": [
+          "struct.pcre2_real_general_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_match_data_create_from_pattern_8",
+      "externally_visible": true,
+      "return_struct_type": "struct.pcre2_real_match_data_8",
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          19
+        ],
+        "struct.pcre2_real_match_data_8": [
+          4,
+          10,
+          11
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_match_data_8": [
+          4
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ],
+        "1": [
+          "struct.pcre2_real_general_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_match_data_free_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          1,
+          2
+        ],
+        "struct.pcre2_real_match_data_8": [
+          2,
+          4,
+          10
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_memctl",
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_get_mark_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_data_8": [
+          3
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_get_ovector_pointer_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_data_8": [
+          13
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_match_data_8": [
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_get_ovector_count_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_data_8": [
+          11
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_get_startchar_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_data_8": [
+          8
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_get_match_data_size_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_data_8": [
+          11
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_pattern_info_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_code_8": [
+          3
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_callout_enumerate_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_callout_enumerate_block_8": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "struct.pcre2_real_code_8": [
+          5,
+          7,
+          9,
+          21,
+          22
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_callout_enumerate_block_8": [
+          4
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "_pcre2_script_run_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.ucd_record": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "name": "pcre2_serialize_encode_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          0,
+          2
+        ],
+        "struct.pcre2_real_code_8": [
+          1,
+          4,
+          5
+        ],
+        "struct.pcre2_serialized_data": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ],
+        "4": [
+          "struct.pcre2_real_general_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_serialize_decode_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_memctl": [
+          0,
+          1,
+          2
+        ],
+        "struct.pcre2_real_code_8": [
+          2,
+          5,
+          9,
+          21,
+          22
+        ],
+        "struct.pcre2_serialized_data": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ],
+        "2": [
+          "struct.pcre2_serialized_data"
+        ],
+        "3": [
+          "struct.pcre2_real_general_context_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_serialize_get_number_of_codes_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_serialized_data": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_serialized_data"
+        ]
+      }
+    },
+    {
+      "name": "_pcre2_study_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          1,
+          3,
+          7,
+          9,
+          13,
+          14,
+          18,
+          20,
+          21,
+          22
+        ],
+        "struct.ucd_record": [
+          3,
+          4
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_code_8": [
+          3
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "set_start_bits",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          1,
+          3
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_code_8": [
+          3
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "find_minlength",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.branch_chain_8": [
+          1
+        ],
+        "struct.pcre2_real_code_8": [
+          7,
+          9,
+          21
+        ],
+        "struct.recurse_check": [
+          0
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ],
+        "4": [
+          "struct.branch_chain_8"
+        ]
+      }
+    },
+    {
+      "name": "set_table_bit",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          1,
+          3
+        ],
+        "struct.ucd_record": [
+          4
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substitute_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          1,
+          7,
+          8,
+          16,
+          19
+        ],
+        "struct.pcre2_real_match_context_8": [
+          3,
+          4
+        ],
+        "struct.pcre2_real_match_data_8": [
+          4,
+          6,
+          8,
+          11,
+          12
+        ],
+        "struct.pcre2_substitute_callout_block_8": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "struct.ucd_record": [
+          1,
+          4
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_match_data_8": [
+          4,
+          8
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ],
+        "5": [
+          "struct.pcre2_real_match_data_8"
+        ],
+        "6": [
+          "struct.pcre2_real_match_context_8"
+        ]
+      }
+    },
+    {
+      "name": "find_text_end",
+      "externally_visible": false,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          7,
+          8
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_copy_byname_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          19,
+          21,
+          22
+        ],
+        "struct.pcre2_real_match_data_8": [
+          1,
+          2,
+          9,
+          11,
+          12,
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_nametable_scan_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          21,
+          22
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_copy_bynumber_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          19
+        ],
+        "struct.pcre2_real_match_data_8": [
+          1,
+          2,
+          9,
+          11,
+          12,
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_length_bynumber_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          19
+        ],
+        "struct.pcre2_real_match_data_8": [
+          1,
+          9,
+          11,
+          12,
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_get_byname_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          19,
+          21,
+          22
+        ],
+        "struct.pcre2_real_match_data_8": [
+          1,
+          2,
+          9,
+          11,
+          12,
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_get_bynumber_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          19
+        ],
+        "struct.pcre2_real_match_data_8": [
+          1,
+          2,
+          9,
+          11,
+          12,
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_length_byname_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_code_8": [
+          19,
+          21,
+          22
+        ],
+        "struct.pcre2_real_match_data_8": [
+          1,
+          9,
+          11,
+          12,
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_list_get_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.pcre2_real_match_data_8": [
+          2,
+          9,
+          11,
+          12,
+          13
+        ]
+      },
+      "address_taken_fields": {
+        "struct.pcre2_real_match_data_8": [
+          9,
+          13
+        ]
+      },
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_match_data_8"
+        ]
+      }
+    },
+    {
+      "name": "pcre2_substring_number_from_name_8",
+      "externally_visible": true,
+      "param_struct_types": {
+        "0": [
+          "struct.pcre2_real_code_8"
+        ]
+      }
+    },
+    {
+      "name": "_pcre2_xclass_8",
+      "externally_visible": true,
+      "struct_field_accesses": {
+        "struct.ucd_record": [
+          1,
+          5,
+          6
+        ]
+      }
+    }
+  ],
+  "type_flow": {
+    "types_in": [
+      {
+        "type": "struct.compile_block_8",
+        "fields_accessed": true
+      },
+      {
+        "type": "struct.pcre2_memctl",
+        "fields_accessed": true
+      },
+      {
+        "type": "struct.pcre2_real_code_8",
+        "fields_accessed": true
+      },
+      {
+        "type": "struct.pcre2_real_compile_context_8",
+        "fields_accessed": true
+      },
+      {
+        "type": "struct.pcre2_real_convert_context_8",
+        "fields_accessed": true
+      },
+      {
+        "type": "struct.pcre2_real_general_context_8",
+        "fields_accessed": false
+      },
+      {
+        "type": "struct.pcre2_real_jit_stack_8",
+        "fields_accessed": false
+      },
+      {
+        "type": "struct.pcre2_real_match_context_8",
+        "fields_accessed": true
+      },
+      {
+        "type": "struct.pcre2_real_match_data_8",
+        "fields_accessed": true
+      },
+      {
+        "type": "struct.pcre2_serialized_data",
+        "fields_accessed": true
+      }
+    ],
+    "types_out": [
+    ]
+  }
+}

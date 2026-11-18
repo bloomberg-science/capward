@@ -1,0 +1,1241 @@
+{
+  "program": "lighttpd",
+  "libraries": [
+    "lighttpd_merged",
+    "openssl_merged",
+    "zlib_merged"
+  ],
+  "shared_types": [
+    {
+      "type": "struct.SCRYPT_PARAMS_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_name_entry_st",
+      "owner": "openssl_merged",
+      "total_fields": 4,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.X509_name_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.__sFILE",
+      "owner": "system",
+      "total_fields": 26,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "_flags",
+            "_file"
+          ],
+          "field_indices": [
+            3,
+            4
+          ],
+          "access_functions": [
+            "open_console",
+            "read_string_inner",
+            "file_read",
+            "file_ctrl",
+            "RAND_load_file"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct._dirdesc",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.addrinfo",
+      "owner": "system",
+      "total_fields": 8,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "ai_family",
+            "ai_socktype",
+            "ai_protocol",
+            "ai_addrlen",
+            "ai_addr"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "access_functions": [
+            "sock_addr_from_str_hints",
+            "sock_addr_from_str_numeric"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "ai_family",
+            "ai_socktype",
+            "ai_protocol",
+            "ai_addr",
+            "ai_next"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "access_functions": [
+            "BIO_ADDRINFO_free",
+            "BIO_ADDRINFO_family",
+            "BIO_ADDRINFO_socktype",
+            "BIO_ADDRINFO_protocol",
+            "BIO_ADDRINFO_next",
+            "BIO_ADDRINFO_address",
+            "BIO_lookup_ex"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.asn1_object_st",
+      "owner": "openssl_merged",
+      "total_fields": 6,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.asn1_string_st",
+      "owner": "openssl_merged",
+      "total_fields": 4,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "data"
+          ],
+          "field_indices": [
+            2
+          ],
+          "access_functions": [
+            "https_add_ssl_client_entries"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.bignum_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.bio_method_st",
+      "owner": "openssl_merged",
+      "total_fields": 12,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.bio_st",
+      "owner": "openssl_merged",
+      "total_fields": 18,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.const_iovec",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.crypto_ex_data_st",
+      "owner": "openssl_merged",
+      "total_fields": 2,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.dirent",
+      "owner": "system",
+      "total_fields": 8,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "d_name"
+          ],
+          "field_indices": [
+            7
+          ],
+          "access_functions": [
+            "mod_dirlisting_subrequest",
+            "webdav_propfind_dir",
+            "webdav_delete_dir",
+            "webdav_copymove_dir"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "d_name"
+          ],
+          "field_indices": [
+            7
+          ],
+          "access_functions": [
+            "OPENSSL_DIR_read"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    },
+    {
+      "type": "struct.engine_st",
+      "owner": "openssl_merged",
+      "total_fields": 28,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_cipher_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 17,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_cipher_st",
+      "owner": "openssl_merged",
+      "total_fields": 34,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_mac_ctx_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "EVP_MAC_CTX_free",
+            "EVP_MAC_CTX_dup",
+            "EVP_MAC_update",
+            "evp_mac_final",
+            "EVP_MAC_CTX_new",
+            "EVP_MAC_CTX_set_params",
+            "EVP_MAC_CTX_get0_mac",
+            "EVP_MAC_init",
+            "EVP_MAC_CTX_get_mac_size",
+            "EVP_Q_mac",
+            "EVP_MAC_CTX_get_block_size",
+            "EVP_MAC_CTX_get_params",
+            "EVP_MAC_CTX_gettable_params",
+            "EVP_MAC_CTX_settable_params"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_md_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 9,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_md_st",
+      "owner": "openssl_merged",
+      "total_fields": 32,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.evp_pkey_st",
+      "owner": "openssl_merged",
+      "total_fields": 19,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ocsp_basic_response_st",
+      "owner": "openssl_merged",
+      "total_fields": 4,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ocsp_response_data_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ocsp_response_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "OCSP_response_status",
+            "OCSP_RESPONSE_print",
+            "OCSP_response_create"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.ocsp_single_response_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "OCSP_resp_find",
+            "OCSP_resp_find_status",
+            "OCSP_SINGLERESP_get0_id",
+            "OCSP_RESPONSE_print",
+            "OCSP_basic_add1_status"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.ossl_init_settings_st",
+      "owner": "openssl_merged",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ossl_param_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "data_type",
+            "data",
+            "data_size"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3
+          ],
+          "access_functions": [
+            "ssl_tlsext_ticket_key_cb"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.server",
+      "owner": "lighttpd_merged",
+      "total_fields": 32,
+      "shared_with": [
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr",
+      "owner": "system",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "sa_family"
+          ],
+          "field_indices": [
+            1
+          ],
+          "access_functions": [
+            "server_oneshot_init",
+            "sock_addr_cache_inet_ntop_copy_buffer",
+            "network_socket_activation_from_env",
+            "network_server_init",
+            "network_host_normalize_addr_str",
+            "network_srv_socket_init_token",
+            "network_server_handle_fdevent",
+            "gw_proc_sockaddr_init",
+            "gw_spawn_connection",
+            "http_response_buffer_append_authority",
+            "http_cgi_headers",
+            "sock_addr_get_port",
+            "sock_addr_is_addr_wildcard",
+            "sock_addr_is_family_eq",
+            "sock_addr_is_port_eq",
+            "sock_addr_is_addr_eq",
+            "sock_addr_is_addr_eq_bits",
+            "sock_addr_set_port",
+            "sock_addr_inet_ntop",
+            "sock_addr_inet_ntop_copy_buffer",
+            "sock_addr_inet_ntop_append_buffer",
+            "sock_addr_stringify_append_buffer",
+            "sock_addr_nameinfo_append_buffer",
+            "sock_addr_from_str_hints",
+            "sock_addr_from_str_numeric",
+            "accesslog_append_remote_addr_masked",
+            "mod_extforward_set_addr",
+            "proxy_create_env"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sa_family"
+          ],
+          "field_indices": [
+            1
+          ],
+          "access_functions": [
+            "addr_strings",
+            "BIO_ADDR_family",
+            "BIO_ADDR_sockaddr_size",
+            "BIO_lookup_ex",
+            "dgram_ctrl",
+            "BIO_ADDR_make",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_new",
+            "BIO_ADDR_rawport",
+            "BIO_ADDR_path_string"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr_in",
+      "owner": "system",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "sin_family",
+            "sin_port",
+            "sin_addr"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3
+          ],
+          "access_functions": [
+            "sock_addr_cache_inet_ntop_copy_buffer",
+            "http_response_buffer_append_authority",
+            "sock_addr_get_port",
+            "sock_addr_is_addr_wildcard",
+            "sock_addr_is_port_eq",
+            "sock_addr_is_addr_eq",
+            "sock_addr_is_addr_eq_bits",
+            "sock_addr_set_port",
+            "sock_addr_assign",
+            "sock_addr_inet_pton",
+            "sock_addr_inet_ntop",
+            "sock_addr_inet_ntop_copy_buffer",
+            "sock_addr_inet_ntop_append_buffer",
+            "sock_addr_stringify_append_buffer",
+            "sock_addr_nameinfo_append_buffer",
+            "sock_addr_from_str_hints"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sin_family",
+            "sin_port",
+            "sin_addr"
+          ],
+          "field_indices": [
+            1,
+            2,
+            3
+          ],
+          "access_functions": [
+            "addr_strings",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_rawmake",
+            "BIO_ADDR_rawport"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr_in6",
+      "owner": "system",
+      "total_fields": 6,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "sin6_family",
+            "sin6_port",
+            "sin6_addr"
+          ],
+          "field_indices": [
+            1,
+            2,
+            4
+          ],
+          "access_functions": [
+            "sock_addr_cache_inet_ntop_copy_buffer",
+            "sock_addr_get_port",
+            "sock_addr_is_addr_wildcard",
+            "sock_addr_is_port_eq",
+            "sock_addr_is_addr_eq",
+            "sock_addr_is_addr_eq_bits",
+            "sock_addr_set_port",
+            "sock_addr_assign",
+            "sock_addr_inet_pton",
+            "sock_addr_inet_ntop",
+            "sock_addr_inet_ntop_copy_buffer",
+            "sock_addr_inet_ntop_append_buffer",
+            "sock_addr_stringify_append_buffer",
+            "sock_addr_nameinfo_append_buffer",
+            "sock_addr_from_str_hints",
+            "accesslog_append_remote_addr_masked"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sin6_family",
+            "sin6_port",
+            "sin6_addr"
+          ],
+          "field_indices": [
+            1,
+            2,
+            4
+          ],
+          "access_functions": [
+            "addr_strings",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_rawmake",
+            "BIO_ADDR_rawport"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    },
+    {
+      "type": "struct.sockaddr_un",
+      "owner": "system",
+      "total_fields": 3,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "sun_family",
+            "sun_path"
+          ],
+          "field_indices": [
+            1,
+            2
+          ],
+          "access_functions": [
+            "network_socket_activation_from_env",
+            "network_server_init",
+            "network_host_normalize_addr_str",
+            "network_abstract_socket_parse",
+            "network_server_handle_fdevent",
+            "sock_addr_is_addr_eq",
+            "sock_addr_assign",
+            "sock_addr_inet_ntop",
+            "sock_addr_inet_ntop_copy_buffer",
+            "sock_addr_inet_ntop_append_buffer",
+            "sock_addr_stringify_append_buffer",
+            "sock_addr_nameinfo_append_buffer",
+            "sock_addr_from_str_hints"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "sun_family",
+            "sun_path"
+          ],
+          "field_indices": [
+            1,
+            2
+          ],
+          "access_functions": [
+            "BIO_lookup_ex",
+            "BIO_ADDR_rawaddress",
+            "BIO_ADDR_rawmake",
+            "BIO_ADDR_path_string"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_cipher_st",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [
+            0
+          ],
+          "access_functions": [
+            "ssl_get_cipher_by_char",
+            "bytes_to_cipher_list",
+            "ssl_create_cipher_list"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_cipher_st.65",
+      "owner": "openssl_merged",
+      "total_fields": 16,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_conf_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 14,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 98,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_method_st",
+      "owner": "openssl_merged",
+      "total_fields": 29,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.ssl_st",
+      "owner": "openssl_merged",
+      "total_fields": 130,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st",
+      "owner": "openssl_merged",
+      "total_fields": 5,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st_ASN1_INTEGER",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st_X509",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.stack_st_X509_NAME",
+      "owner": "unknown",
+      "total_fields": 0,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.tm",
+      "owner": "system",
+      "total_fields": 11,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "tm_sec",
+            "tm_min",
+            "tm_hour",
+            "tm_mday",
+            "tm_mon",
+            "tm_year",
+            "tm_wday",
+            "tm_isdst"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "access_functions": [
+            "http_date_if_modified_since",
+            "http_date_parse_RFC_850",
+            "http_date_parse_asctime"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        },
+        {
+          "library": "openssl_merged",
+          "fields_accessed": [
+            "tm_sec",
+            "tm_min",
+            "tm_hour",
+            "tm_mday",
+            "tm_mon",
+            "tm_year",
+            "tm_wday",
+            "tm_yday"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "access_functions": [
+            "ossl_asn1_time_print_ex",
+            "ossl_asn1_time_to_tm",
+            "OPENSSL_gmtime_adj",
+            "ossl_asn1_time_from_tm",
+            "ASN1_TIME_to_generalizedtime",
+            "ASN1_TIME_set_string_X509",
+            "OPENSSL_gmtime_diff",
+            "TS_RESP_create_response"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "needs_accessor"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_cinf_st",
+      "owner": "openssl_merged",
+      "total_fields": 11,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_st",
+      "owner": "openssl_merged",
+      "total_fields": 27,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_store_ctx_st",
+      "owner": "openssl_merged",
+      "total_fields": 36,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.x509_store_st",
+      "owner": "openssl_merged",
+      "total_fields": 19,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [],
+          "field_indices": [],
+          "access_functions": [],
+          "opaque": true,
+          "sealing_recommendation": "seal"
+        }
+      ]
+    },
+    {
+      "type": "struct.z_stream_s",
+      "owner": "zlib_merged",
+      "total_fields": 14,
+      "shared_with": [
+        {
+          "library": "lighttpd_merged",
+          "fields_accessed": [
+            "next_in",
+            "avail_in",
+            "total_in",
+            "next_out",
+            "avail_out",
+            "total_out",
+            "msg",
+            "zalloc"
+          ],
+          "field_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "access_functions": [
+            "mod_deflate_stream_init",
+            "deflate_compress_response",
+            "deflate_compress_cleanup",
+            "mod_deflate_compress"
+          ],
+          "opaque": false,
+          "sealing_recommendation": "address_taken"
+        }
+      ]
+    }
+  ],
+  "embedded_foreign_fields": [
+    {
+      "container_type": "struct.ssl_st",
+      "consumer": "openssl_merged",
+      "field_type": "struct.anon",
+      "field_owner": "lighttpd_merged",
+      "field_index": 17,
+      "function": "ssl3_free"
+    },
+    {
+      "container_type": "struct.ssl_ctx_st",
+      "consumer": "openssl_merged",
+      "field_type": "struct.anon.1",
+      "field_owner": "lighttpd_merged",
+      "field_index": 60,
+      "function": "ssl3_ctx_callback_ctrl"
+    },
+    {
+      "container_type": "struct.ssl_st",
+      "consumer": "openssl_merged",
+      "field_type": "struct.anon.2",
+      "field_owner": "lighttpd_merged",
+      "field_index": 88,
+      "function": "tls_setup_handshake"
+    }
+  ],
+  "sealing_summary": {
+    "total_shared_types": 40,
+    "sealable_opaque": 33,
+    "needs_accessor": 6,
+    "cannot_seal": 0,
+    "address_taken": 1
+  }
+}

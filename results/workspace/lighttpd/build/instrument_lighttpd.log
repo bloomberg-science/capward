@@ -1,0 +1,13 @@
+seal-instrument: instrumenting module 'lighttpd_merged'
+seal-instrument: 30 sealable types, 6952 seal points
+seal-instrument: created __sealcap global and __seal_init() with otype 1024 (base=1024 + offset=0)
+seal-instrument D2: in plugins_call_set_defaults indirect call arg 0 type=struct.server
+seal-instrument D2: in plugins_call_worker_init indirect call arg 0 type=struct.server
+seal-instrument D2: in plugins_call_handle_trigger indirect call arg 0 type=struct.server
+seal-instrument D2: in plugins_call_handle_sighup indirect call arg 0 type=struct.server
+seal-instrument D2: in plugins_call_handle_waitpid indirect call arg 0 type=struct.server
+seal-instrument D2: in plugins_call_init indirect call arg 0 type=struct.server
+seal-instrument: 6 indirect call arg seals (Strategy D2) across 6 call sites
+seal-instrument: 0 functions identified for seal-on-return
+seal-instrument: registered __seal_init() as .init_array constructor (priority 101)
+seal-instrument: 7 seal insertions (0 seal-on-return, 1 seal-before-call, 6 indirect-call-D2), 81 unseal insertions (81 on-entry, 0 strategy-5, 0 strategy-5b, 0 after-call), 1 accessor replacements

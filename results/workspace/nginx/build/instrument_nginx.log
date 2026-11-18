@@ -1,0 +1,36 @@
+seal-instrument: instrumenting module 'nginx_merged'
+seal-instrument: 39 sealable types, 5781 seal points
+seal-instrument: created __sealcap global and __seal_init() with otype 1024 (base=1024 + offset=0)
+seal-instrument D2: in ngx_chain_writer indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_close_connection indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_resolver_send_tcp_query indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_resolver_udp_read indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_resolver_tcp_write indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_resolver_tcp_read indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_event_accept indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_event_accept indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_event_recvmsg indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_event_connect_peer indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_add_channel_event indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_channel_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_ssl_handshake_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_ssl_shutdown_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_ssl_ocsp_read_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_ssl_ocsp_write_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_ssl_ocsp_validate_next indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_ssl_ocsp_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_wait_request_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_ssl_handshake indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_read_request_header indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_keepalive_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_lingering_close_handler indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_do_read_client_request_body indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_upstream_process_header indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_upstream_process_upgraded indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_upstream_process_upgraded indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_upstream_process_non_buffered_request indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument D2: in ngx_http_write_filter indirect call arg 0 type=struct.ngx_connection_s
+seal-instrument: 29 indirect call arg seals (Strategy D2) across 29 call sites
+seal-instrument: 2 functions identified for seal-on-return
+seal-instrument: registered __seal_init() as .init_array constructor (priority 101)
+seal-instrument: 33 seal insertions (2 seal-on-return, 2 seal-before-call, 29 indirect-call-D2), 128 unseal insertions (96 on-entry, 19 strategy-5, 0 strategy-5b, 13 after-call), 3 accessor replacements

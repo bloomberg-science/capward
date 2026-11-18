@@ -1,0 +1,47 @@
+seal-instrument: instrumenting module 'libevent_merged'
+seal-instrument: 14 sealable types, 2197 seal points
+seal-instrument: created __sealcap global and __seal_init() with otype 1026 (base=1024 + offset=2)
+seal-instrument D2: in event_del_nolock_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_callback_activate_nolock_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in evmap_io_del_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in evmap_signal_del_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_deferred_cb_schedule_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_add_nolock_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in evmap_io_add_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in evmap_signal_add_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in bufferevent_run_readcb_ indirect call arg 0 type=struct.bufferevent
+seal-instrument D2: in bufferevent_run_deferred_callbacks_locked indirect call arg 0 type=struct.bufferevent
+seal-instrument D2: in bufferevent_run_deferred_callbacks_locked indirect call arg 0 type=struct.bufferevent
+seal-instrument D2: in bufferevent_run_deferred_callbacks_locked indirect call arg 0 type=struct.bufferevent
+seal-instrument D2: in bufferevent_run_deferred_callbacks_locked indirect call arg 0 type=struct.bufferevent
+seal-instrument D2: in event_base_free_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_free_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_new indirect call arg 0 type=struct.event_config_entry
+seal-instrument D2: in event_base_new indirect call arg 0 type=struct.event_config
+seal-instrument D2: in event_config_free indirect call arg 0 type=struct.event_config_entry
+seal-instrument D2: in event_config_free indirect call arg 0 type=struct.event_config
+seal-instrument D2: in event_reinit indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_reinit indirect call arg 0 type=struct.event_base
+seal-instrument D2: in evmap_reinit_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in evmap_reinit_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_config_avoid_method indirect call arg 0 type=struct.event_config_entry
+seal-instrument D2: in event_base_loop indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_loopbreak indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_loopbreak indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_loopcontinue indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_new indirect call arg 0 type=struct.event
+seal-instrument D2: in event_active_later_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_foreach_event_nolock_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_foreach_event_nolock_ indirect call arg 1 type=struct.event
+seal-instrument D2: in event_base_foreach_event_nolock_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_foreach_event_nolock_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_foreach_event_nolock_ indirect call arg 1 type=struct.event
+seal-instrument D2: in evmap_foreach_event_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in evmap_foreach_event_ indirect call arg 0 type=struct.event_base
+seal-instrument D2: in event_base_active_by_fd indirect call arg 0 type=struct.event_base
+seal-instrument D2: in evhttp_deferred_read_cb indirect call arg 0 type=struct.bufferevent
+seal-instrument: 39 indirect call arg seals (Strategy D2) across 37 call sites
+seal-instrument: 20 functions identified for seal-on-return
+seal-instrument: 2 indirect call unseals (Strategy 5b)
+seal-instrument: registered __seal_init() as .init_array constructor (priority 101)
+seal-instrument: 60 seal insertions (20 seal-on-return, 1 seal-before-call, 39 indirect-call-D2), 259 unseal insertions (248 on-entry, 7 strategy-5, 2 strategy-5b, 2 after-call), 0 accessor replacements
